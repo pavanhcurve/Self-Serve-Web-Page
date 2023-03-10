@@ -1,120 +1,229 @@
-*{
+* {
     box-sizing: border-box;
 }
-.flx_row{
+
+.flx_row {
     display: flex;
     flex-direction: row;
 }
-.flx_col{
+
+.flx_col {
     display: flex;
     flex-direction: column;
 }
-.mp0{
+
+.mp0 {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     height: 100%;
     width: 100%;
     background: url('/Icons/bg.png') no-repeat;
-    background-size:cover;
+    background-size: cover;
     /* min-height: 100vh; */
 }
-.complete_container{
+
+.complete_container {
     height: inherit;
     width: inherit;
 }
-.wh100{
+
+.wh100 {
     height: 100%;
     width: 100%;
 }
+
 @font-face {
     font-family: "Montserrat-Black";
     src: url("/fonts/Montserrat-Black.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-BlackItalic";
     src: url("/fonts/Montserrat-BlackItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-Bold";
     src: url("/fonts/Montserrat-Bold.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-BoldItalic";
     src: url("/fonts/Montserrat-BoldItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-ExtraBold";
     src: url("/fonts/Montserrat-ExtraBold.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-ExtraBoldItalic";
     src: url("/fonts/Montserrat-ExtraBoldItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-ExtraLight";
     src: url("/fonts/Montserrat-ExtraLight.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-ExtraLightItalic";
     src: url("/fonts/Montserrat-ExtraLightItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-Italic";
     src: url("/fonts/Montserrat-Italic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-Light";
     src: url("/fonts/Montserrat-Light.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-LightItalic";
     src: url("/fonts/Montserrat-LightItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-Medium";
     src: url("/fonts/Montserrat-Medium.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-MediumItalic";
     src: url("/fonts/Montserrat-MediumItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-Regular";
     src: url("/fonts/Montserrat-Regular.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-SemiBold";
     src: url("/fonts/Montserrat-SemiBold.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-SemiBoldItalic";
     src: url("/fonts/Montserrat-SemiBoldItalic.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-Thin";
     src: url("/fonts/Montserrat-Thin.ttf");
 }
+
 @font-face {
     font-family: "Montserrat-ThinItalic";
     src: url("/fonts/Montserrat-ThinItalic.ttf");
 }
-.navbar{
-    justify-content: space-between;
+
+
+
+/* About Us Section */
+
+#usp_head_container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    position: sticky;
-    top: 0;
+    position: absolute;
+    height: 430px;
+    width: 100%;
+    background: url(/Icons/bgblue.png) no-repeat;
+    /* background-size: cover; */
 }
-.options{
-    width: 50%;
-    justify-content: space-between;
-    margin: 0px 30px 0px 200px;
+
+#usp_head img {
+    position: relative;
+    height: 550px;
+}
+
+.first_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    max-width: 100%;
+    position: relative;
+    top: 0px;
+}
+
+.first_box p {
     font-family: "Montserrat-Bold";
-    font-size: 16px;
+    font-size: 56px;
+    color: #f6f6f6;
 }
-.options div{
-    cursor: pointer;
-    text-transform: uppercase;
+
+.head_in {
+    font-family: "Montserrat-SemiBold";
+    font-size: 25px;
+    color: #626d6e;
+    margin-bottom: 3px;
+    margin-top: 18px;
+}
+
+.para_in {
+    font-family: "Montserrat-medium";
+    font-size: 17px;
+    color: #626d6e;
+}
+
+.partol {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    top: 23px;
+    left: 23px;
+    padding: 4px 14px;
+}
+
+.call_me_gif {
+    height: 200px;
+}
+
+/*  */
+.img-box {
+    max-width: 90%;
+    position: relative;
+    top: 62px;
+    height: 420px;
+    /* width: 99%; */
+    background: url(/Icons/card.png) no-repeat;
+}
+
+.img {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.swiper {
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+}
+
+.swiper-slide-major {
+    width: 390px !important;
+    margin-right: 30px !important;
+}
+
+.again {
+    width: 340px !important;
+    margin-right: 0px !important;
 }

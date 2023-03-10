@@ -1,33 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">  
+    <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">
+    <script src="./JavaScript/web_js.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
+
 <body class="mp0">
     <div class="complete_container flx_col">
-        <div class="navbar flx_row">
-            <div class="Hlogo">
-                <img src="/Icons/logo.png" height="54px" width="300px">
-            </div>
-            <div class="options flx_row">
-                <div>Home</div>
-                <div>About US</div>
-                <div>Library</div>
-                <div>Self Serve Tool</div>
-                <div>Contact US</div>
-            </div>
-        </div>
-        <div class="about_us_container">
-            
-        </div>
-        <div class="3rd container">
+        <section class="about_us_container">
+            <div id="usp_head_container">
+                <div class="container">
+                    <div class="swiper slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-major">
+                                <div class="first_box">
+                                    <p>Enterprise Marketing Automation</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide again">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">DYNAMIC AD SERVING</h2>
+                                        <img class="call_me_gif" src="./Icons/DYNAMIC AD SERVING.gif" alt="">
+                                        <p class="para_in">Brands use this to create & show data based relevant ads to
+                                            users in real
+                                            time improve marketing ROI.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">RECOMMENDATION ENGINE</h2>
+                                        <img class="call_me_gif" src="./Icons/RECOMMENDATION ENGINE.gif" alt="">
+                                        <p class="para_in">Generate User product feed based on his online and offline
+                                            activity</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">DYNAMIC CREATIVES</h2>
+                                        <img class="call_me_gif" src="./Icons/DYNAMIC CREATIVES.gif" alt="">
+                                        <p class="para_in">Every user is unique, hence every ad for every users should
+                                            be unique.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">PROGRAMATIC MEDIA BUYING</h2>
+                                        <img class="call_me_gif" src="./Icons/PROGRAMATIC MEDIA BUYING.gif" alt="">
+                                        <p class="para_in">Media Buying Automation for Bringing Speed, Scale & Driving
+                                            Performance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">ENTERPRISE ANALYTICS</h2>
+                                        <img class="call_me_gif" src="./Icons/ENTERPRISE ANALYTICS.gif" alt="">
+                                        <p class="para_in">We provide real time campaign performance dashboards, a/b
+                                            testing
+                                            environments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">CONSULTING</h2>
+                                        <img class="call_me_gif" src="./Icons/CONSULTING.gif" alt="">
+                                        <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
+                                            Setup.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-        </div>
+                        </div>
+                        <span class="transactions-stat__number number-counting"></span>% <BR />
+                        $<span class="spending-stat__number number-counting"></span>
+                        <div class="msm"></div>
+                    </div>
+                    <div class="swiper-left-btn"><img style="position: absolute;top: 176px;left: 0px;height: 40px;"
+                            src="./Icons/leftarrow.png" alt=""></div>
+                    <div class="swiper-right-btn"><img style="position: absolute;top: 176px;right: 0px;height: 40px;"
+                            src="./Icons/rightarrow.png" alt=""></div>
+                </div>
+            </div>
+
     </div>
-<script src="/JavaScript/web_js.js"></script>    
+
+    </section>
+    <div class="3rd container">
+
+    </div>
+    </div>
+    <script>
+        var swiper = new Swiper(".slider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            initialSlide: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-left-btn',
+                prevEl: '.swiper-right-btn',
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+                reverseDirection: false,
+            }
+        });
+        // var swiper = new Swiper('.slider', {
+        //     slidesPerView: 1,
+        //     spaceBetween: 90,
+        //     grabCursor: true,
+        //     speed: 500,
+        //     loop: true,
+        //     pagination: {
+        //         el: '.slider__pagination',
+        //         clickable: true,
+        //     },
+        //     navigation: {
+        //         nextEl: '.swiper-button-prev',
+        //         prevEl: '.swiper-button-next',
+        //     },
+        // });
+    </script>
 </body>
+
 </html>
