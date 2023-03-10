@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">  
+    <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">
 </head>
+
 <body class="mp0">
     <div class="complete_container flx_col">
         <div class="navbar flx_row">
@@ -14,20 +16,41 @@
                 <img src="/Icons/logo.png" height="54px" width="300px">
             </div>
             <div class="options flx_row">
-                <div>Home</div>
-                <div>About US</div>
-                <div>Library</div>
-                <div>Self Serve Tool</div>
-                <div>Contact US</div>
+                <div><a href="#home">Home</a></div>
+                <div><a href="#about">About Us</a></div>
+                <div><a href="#library">Library</a></div>
+                <div><a href="#selfserve">Self Serve Tool</a></div>
+                <div><a href="#contact">Contact Us</a></div>
+            </div>
+            <div class="menu-wrap">
+                <input type="checkbox" id="check" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#home" onclick="menu()">Home</a></li>
+                                <li><a href="#about" onclick="menu()">About Us</a></li>
+                                <li><a href="#library" onclick="menu()">Library</a></li>
+                                <li><a href="#selfserve" onclick="menu()">Self Serve Tool</a></li>
+                                <li><a href="#contact" onclick="menu()">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="about_us_container">
-            
-        </div>
-        <div class="3rd container">
-
-        </div>
     </div>
-<script src="/JavaScript/web_js.js"></script>    
+    <div class="about_us_container">
+
+    </div>
+    <div class="3rd container">
+
+    </div>
+    </div>
+    <script src="/JavaScript/web_js.js"></script>
 </body>
+
 </html>
