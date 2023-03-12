@@ -18,7 +18,7 @@
 }
 
 body {
-    height: 100%;
+    min-height: 1500vh;
     width: 100%;
     background: url('/Icons/bg.png') no-repeat;
     background-size: cover;
@@ -133,7 +133,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     height: 430px;
     width: 100%;
     background: url(/Icons/bgblue.png) no-repeat;
@@ -211,6 +210,7 @@ body {
     padding: 0 15px;
     max-width: 1230px;
     margin: 0 auto;
+    user-select: none;
 }
 
 .swiper {
@@ -226,4 +226,43 @@ body {
 .again {
     width: 340px !important;
     margin-right: 0px !important;
+}
+
+
+
+/* Achivemnet Section */
+.blue_bg {
+    background: url(/Icons/achive-bg.png) no-repeat;
+    height: 330px;
+    width: 100%;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.inner_piece {}
+
+.inner-box {
+    position: relative;
+    background: url(/Icons/box.png) no-repeat;
+    height: 229px;
+    width: 19%;
+    background-size: 220px 220px;
+}
+
+.inner-box img {
+    height: 138px;
+    width: 152px;
+    position: absolute;
+    /* border-radius: 143px; */
+    top: 35px;
+    left: 35px;
+}
+
+.box-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 95px;
 }
