@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
     <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">  
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="mp0">
     <div class="complete_container flx_col">
-        <div class="navbar flx_row">
+        <!-- <section class="navbar flx_row">
             <div class="Hlogo">
                 <img src="/Icons/logo.png" height="54px" width="300px">
             </div>
@@ -20,13 +23,453 @@
                 <div>Self Serve Tool</div>
                 <div>Contact US</div>
             </div>
+        </section> -->
+        <div class="navbar flx_row">
+            <div class="Hlogo">
+                <img src="/Icons/logo.png" height="54px" width="300px">
+            </div>
+            <div class="options flx_row">
+                <div><a href="#home">Home</a></div>
+                <div><a href="#about">About Us</a></div>
+                <div><a href="#library">Library</a></div>
+                <div><a href="#selfserve">Self Serve Tool</a></div>
+                <div><a href="#contact">Contact Us</a></div>
+            </div>
+            <div class="menu-wrap">
+                <input type="checkbox" id="check" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#home" onclick="menu()">Home</a></li>
+                                <li><a href="#about" onclick="menu()">About Us</a></li>
+                                <li><a href="#library" onclick="menu()">Library</a></li>
+                                <li><a href="#selfserve" onclick="menu()">Self Serve Tool</a></li>
+                                <li><a href="#contact" onclick="menu()">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about_us_container">
-            
-        </div>
-        <div class="3rd container">
+        <section class="about_us_container flx_col">
+            <div class="flx_row para_vid">
+                <div class="btn_copy_content flx_col">
+                    <div class="colorblack">Worlds</div>
+                    <div class="colorblue">Largest Dynamic</div>
+                    <div class="colorblue">Creative Library</div>
+                    <div class="visit_btn">
+                        <img src="/Icons/visit button.png">
+                    </div>
+                </div>
+                <div class="img_vid_content">
+                    <img src="/Icons/tab.png">
+                </div>
+            </div>
+            <div class="ab_us flx_col">
+                <div class="about_hrading colorblue">
+                    About Us
+                </div>
+                <div class="para colorblack">
+                    Hockeycurve's Revolutionary Predictive Communication Engine uses Big Data & Artificial Intelligence to profile & identify high intent consumers & delivers dynamically created bespoke experiences to each one of them across devices.
+                </div>
+                <div class="lets_btn">
+                    <img src="/Icons/lets button.png">
+                </div>
+            </div>
+        </section>
+        <section class="swipe_card_container">
+            <div id="usp_head_container">
+                <div class="container">
+                    <div class="swiper slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-major">
+                                <div class="first_box">
+                                    <p>Enterprise Marketing Automation</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide again">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">DYNAMIC AD SERVING</h2>
+                                        <img class="call_me_gif" src="/Icons/dynadserve.gif" alt="">
+                                        <p class="para_in">Brands use this to create & show data based relevant ads to
+                                            users in real
+                                            time improve marketing ROI.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">RECOMMENDATION ENGINE</h2>
+                                        <img class="call_me_gif" src="/Icons/recomengine.gif" alt="">
+                                        <p class="para_in">Generate User product feed based on his online and offline
+                                            activity</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">DYNAMIC CREATIVES</h2>
+                                        <img class="call_me_gif" src="/Icons/dyncreative.gif" alt="">
+                                        <p class="para_in">Every user is unique, hence every ad for every users should
+                                            be unique.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">PROGRAMATIC MEDIA BUYING</h2>
+                                        <img class="call_me_gif" src="/Icons/progmbuying.gif" alt="">
+                                        <p class="para_in">Media Buying Automation for Bringing Speed, Scale & Driving
+                                            Performance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">ENTERPRISE ANALYTICS</h2>
+                                        <img class="call_me_gif" src="/Icons/entpanlysis.gif" alt="">
+                                        <p class="para_in">We provide real time campaign performance dashboards, a/b
+                                            testing
+                                            environments.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-box">
+                                    <div class="partol">
+                                        <h2 class="head_in">CONSULTING</h2>
+                                        <img class="call_me_gif" src="/Icons/consulting.gif" alt="">
+                                        <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
+                                            Setup.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-left-btn"><img style="position: absolute;top: 200px;left: 0px;height: 40px;"
+                            src="/Icons/leftarrow.png" alt=""></div>
+                    <div class="swiper-right-btn"><img style="position: absolute;top: 200px;right: 0px;height: 40px;"
+                            src="/Icons/rightarrow.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="dco_container flx_col colorblack">
+            <div class="what_is_dco_content">
+                <div class="para_gif_content flx_row">
+                    <div class="wh_dco flx_col">
+                        <div class="f_head">What Is <span class="colorblue">DCO?</span></div>
+                        <div class="para1">
+                            Dynamic Creative is simply any creative that changes automatically based on information about the user, whether this is related to their behavior, location or context.
+                        </div>
+                        <div class="para2">
+                            <span class="colorblue">Variables : </span> Time, Device, Weather, Ad placement / contextual targeting, Location, bhavioral targeting, demographics, Retargeting Information.
+                        </div>
+                        <div class="create_btn">
+                            <img src="/Icons/createownbtn.png">
+                        </div>
+                    </div>
+                    <div class="wh_dco_gif">
+                        <img src="/Icons/dco1.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="why_dco_content">
+                <div class="para_gif_content2 flx_row">
+                    <div class="why_dco_gif">
+                        <img src="/Icons/dco2.gif">
+                    </div>
+                    <div class="why_dco flx_col">
+                        <div class="s_head">Why <span class="colorblue">DCO?</span></div>
+                        <div class="type flx_row">
+                            <div class="banner">Banner Blindness does not stand a chance</div>
+                            <div><img src="/Icons/bulletpoints.png"></div>
+                        </div>
+                        <div class="type flx_row">
+                            Personalized and customized<br>communication for all
+                            <div><img src="/Icons/bulletpoints.png"></div>
+                        </div>
+                        <div class="type flx_row">
+                            Persuasive power & the ability to convince<br>the user to transact
+                            <div><img src="/Icons/bulletpoints.png"></div>
+                        </div>
+                        <div class="type flx_row">
+                            Increases relevance and relatability
+                            <div><img src="/Icons/bulletpoints.png"></div>
+                        </div>
+                        <div class="sales_btn">
+                            <img src="/Icons/contactsalesbtn.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="achive_container" style="height: 470px;">
+            <div class="blue_bg">
+                <div class="inner_piece">
+                    <div class="achive_head">
+                        <h2>OUR ACHIEVEMENTS</h2>
+                    </div>
+                    <div style="display: flex;align-items: center;justify-content: center;flex-direction: row;">
+                        <div class="comman_class" style="margin-right: 35px;">
+                            <div id="counter">
+                                <div class="counter-value number_count" data-count="80">0 </div>
+                            </div>
+                            <div>
+                                <p style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';    font-size: 45px;">
+                                    +</p>
+                                <p style="position: relative;top: -10px;">CLIENTS</p>
+                            </div>
+                        </div>
+                        <div class="comman_class">
+                            <div id="counter">
+                                <div class="counter-value number_count" data-count="100">0 </div>
+                            </div>
+                            <div>
+                                <p style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';font-size: 45px;">
+                                    +</p>
+                                <p style="position: relative;top: -10px;">PROJECTS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-items">
+                        <div class="inner-box">
+                            <img src="./Icons/CTR Increase.gif" class="img_inner_box" alt="">
+                            <div class="ctr_rating forall">
+                                <div id="counter">
+                                    <div style="    margin: 10px 0px;"><span class="counter-value pic_count"
+                                            data-count="230">0 </span><span class="pic_count">%
+                                        </span>
+                                        <p class="img_tags_para">CTR Increase</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-box"><img src="./Icons/3X Performance ROI.gif" class="img_inner_box" alt="">
+                            <div class="perform_roi forall">
+                                <div id="counter">
+                                    <div style="    margin: 10px 0px;"><span class="counter-value pic_count"
+                                            data-count="3">0 </span><span class="pic_count">X
+                                        </span>
+                                        <p class="img_tags_para">Performance ROI</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-box"><img src="./Icons/Sales lift for clients.gif" class="img_inner_box" alt="">
+                            <div class="user_tracked forall">
+                                <div id="counter">
+                                    <div style="    margin: 10px 0px;"><span class="counter-value pic_count"
+                                            data-count="200">0 </span><span class="pic_count">M
+                                        </span>
+                                        <p class="img_tags_para">Users Tracked <br>Per Month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-box"><img src="./Icons/Users Tracked Per Month.gif" class="img_inner_box" alt="">
+                            <div class="sale_lift forall">
+                                <div id="counter">
+                                    <div style="    margin: 10px 0px;"><span class="pic_count">+</span> <span
+                                            class="counter-value pic_count" data-count="15">0
+                                        </span><span class="pic_count">%
+                                        </span>
+                                        <p class="img_tags_para">Sales lift for clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="client_use">
+            <h2 class="clients_head"><span style="color: #43494a">Advertisers who have experienced</span><span
+                    style="display: block;color: #2096f3;">our
+                    product
+                    offerings</span>
+            </h2>
+            <marquee behavior="scroll" height="100px" direction="left" scroll
+                onmouseover="this.setAttribute('scrollamount', 0, 0);this.stop();"
+                onmouseout="this.setAttribute('scrollamount', 3, 0);this.start();" scrollamount="18" valign="center"
+                repeat="yes" loop=50>
+                <img src="./Icons/logo1.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo2.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo2.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo3.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo4.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo5.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo6.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo7.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo8.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo9.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo10.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo11.png" width="120" height="100" alt="Natural" />
+                <img src="./Icons/logo12.png" width="120" height="100" alt="Natural" />
+            </marquee>
+        </section>
+        <section id="selfserve">
+            <div class="vid-container">
+                <video width="1300px" height="1500px" autoplay>
+                    <source src="/Icons/main creative.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="self-container">
+                <div class="self-title">
+                    <h4>Create a Dynamic High Quality HTML ad in Few Minutes</h4>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <img src="/Icons/creative1.gif" alt="creative 1">
+                        <p class="step-text">Start creating customizable online ads with our advertisements maker</p>
+                    </div>
+                    <div class="step">
+                        <img src="/Icons/creative2.gif" alt="creative 1">
+                        <p class="step-text">Create a Dynamic ad with various categories of Ad Format types</p>
+                    </div>
+                    <div class="step">
+                        <img src="/Icons/creative3.gif" alt="creative 1">
+                        <p class="step-text">Ideal for Marketers, Small business owners and creative agencies</p>
+                    </div>
+                </div>
+                <div class="cta">
+                    <img src="/Icons/selfservecta.png" alt="btn">
+                </div>
+                <div class="icons">
+                    <div class="icon">
+                        <img src="/Icons/icon1.png" alt="icon1">
+                    </div>
+                    <div class="icon">
+                        <img src="/Icons/icon2.png" alt="icon2">
+                    </div>
+                    <div class="icon">
+                        <img src="/Icons/icon3.png" alt="icon3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="test-mony">
+            <h2 class="head_testm">TESTIMONIALS</h2>
+            <div class="swiper test_mony_Swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonials">
+                            <div class="top_info">
+                                <div class="sub_info" style="margin: 3px 12px;">
+                                    <img height="55px" src="./Icons/face.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="test_name">John Dev</p>
+                                    <img class="test_img" src="Icons/3-Start.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Hic nesciunt vero minima vel laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials">
+                            <div class="top_info">
+                                <div class="sub_info" style="margin: 3px 12px;">
+                                    <img height="55px" src="./Icons/face.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="test_name">John Dev</p>
+                                    <img class="test_img" src="/Icons/3-Start.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Hic nesciunt vero minima vel laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials">
+                            <div class="top_info">
+                                <div class="sub_info" style="margin: 3px 12px;">
+                                    <img height="55px" src="./Icons/face.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="test_name">John Dev</p>
+                                    <img class="test_img" src="/Icons/5-Star.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Hic nesciunt vero minima vel laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonials">
+                            <div class="top_info">
+                                <div class="sub_info" style="margin: 3px 12px;">
+                                    <img height="55px" src="./Icons/face.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="test_name">John Dev</p>
+                                    <img class="test_img" src="/Icons/4stars.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Hic nesciunt vero minima vel laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+        </section>
+        <footer id="footer">
+            <div class="nav-menu flx_row">
+                <div><a href="#home">HOME</a></div>
+                <div><a href="#about">ABOUT US</a></div>
+                <div><a href="#library">LIBRARY</a></div>
+                <div><a href="#selfserve">SELF SERVE TOOL</a></div>
+                <div><a href="#contact">CONTACT US</a></div>
+            </div>
+            <form action="#" id="contact">
+                <h3 class="form-title">REACH US</h3>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="agency-name" placeholder="Agency Name">
+                <input type="email" name="email" placeholder="Email ID">
+                <input type="number" name="number" placeholder="Phone Number">
+                <a href="#"><img src="/Icons/footercta.png" alt="Contact btn"></a>
+            </form>
+            <p class="foot-text">&copy; HOCKEYCURVE GROWTH SOLUTIONS PVT LTD 2023</p>
+        </footer>
+
+
     </div>
 <script src="/JavaScript/web_js.js"></script>    
 </body>
