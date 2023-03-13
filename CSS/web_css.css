@@ -292,12 +292,11 @@ body {
 
 .menu-wrap .menu>div>div>ul>li {
     list-style: none;
-    color: #777;
+    color: #333;
     font-size: 1.5rem;
     padding: 1rem;
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
-    border-bottom: 1px solid #d4d4d4;
 }
 
 .menu-wrap .menu>div>div>ul>li>a {
@@ -363,11 +362,21 @@ body {
 #selfserve .cta {
     display: flex;
     justify-content: center;
+    margin: 20px auto;
 }
 
-#selfserve .cta img {
-    scale: 0.8;
-    cursor: pointer;
+#selfserve .cta .cta-btn {
+    background: #fff;
+    padding: 20px 45px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.5), -10px -10px 30px -10px rgba(0, 0, 0, 0.5), -2px -10px 15px rgba(74, 74, 74, 0.5) inset;
+}
+
+#selfserve .cta .cta-text {
+    font-size: 35px;
+    font-family: "Montserrat-ExtraBold";
+    color: #0A6CC3;
+    margin: 0;
 }
 
 #selfserve .icons {
@@ -385,6 +394,8 @@ body {
 #selfserve .icons .icon:nth-child(2) {
     margin-left: -230px;
 }
+
+/* Footer section */
 
 #footer {
     background: url("/img/footerbg.png") no-repeat center center/cover;
@@ -455,13 +466,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    /* .options {
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        font-family: "Montserrat-Bold";
-        font-size: 16px;
-    } */
 
     #selfserve .vid-container video {
         width: 800px;
@@ -495,6 +499,14 @@ body {
 
     .menu-wrap {
         display: block;
+    }
+
+    #selfserve .self-container {
+        margin-top: -200px;
+    }
+
+    #selfserve .vid-container video {
+        margin-top: -100px;
     }
 }
 
