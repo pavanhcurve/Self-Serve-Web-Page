@@ -127,135 +127,73 @@ body {
 
 
 
-/* About Us Section */
-
-#usp_head_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 430px;
-    width: 100%;
-    background: url(/Icons/bgblue.png) no-repeat;
-    /* background-size: cover; */
-}
-
-#usp_head img {
-    position: relative;
-    height: 550px;
-}
-
-.first_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 540px;
-    max-width: 100%;
-    position: relative;
-    top: 0px;
-}
-
-.first_box p {
-    font-family: "Montserrat-Bold";
-    font-size: 56px;
-    color: #f6f6f6;
-}
-
-.head_in {
-    font-family: "Montserrat-SemiBold";
-    font-size: 25px;
-    color: #626d6e;
-    margin-bottom: 3px;
-    margin-top: 18px;
-}
-
-.para_in {
-    font-family: "Montserrat-medium";
-    font-size: 17px;
-    color: #626d6e;
-}
-
-.partol {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    top: 23px;
-    left: 23px;
-    padding: 4px 14px;
-}
-
-.call_me_gif {
-    height: 200px;
-}
-
 /*  */
-.img-box {
-    max-width: 90%;
-    position: relative;
-    top: 62px;
-    height: 420px;
-    /* width: 99%; */
-    background: url(/Icons/card.png) no-repeat;
-}
 
-.img {
-    position: absolute;
-    height: 500px;
-    width: 100%;
-}
-
-.container {
-    padding: 0 15px;
-    max-width: 1230px;
-    margin: 0 auto;
-    user-select: none;
-}
-
-.swiper {
-    margin-left: 60px !important;
-    margin-right: 60px !important;
-}
-
-.swiper-slide-major {
-    width: 390px !important;
-    margin-right: 30px !important;
-}
-
-.again {
-    width: 340px !important;
-    margin-right: 0px !important;
-}
 
 
 
 /* Achivemnet Section */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
 .blue_bg {
     background: url(/Icons/achive-bg.png) no-repeat;
-    height: 330px;
+    height: 62%;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     margin: 20px 0px;
 }
 
-.inner_piece {}
+.inner_piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-.inner-box {
+/* .inner-box {
     position: relative;
     background: url(/Icons/box.png) no-repeat;
     height: 229px;
     width: 19%;
     background-size: 220px 220px;
-}
+} */
 
-.inner-box img {
+
+
+
+/* .inner-box img {
     height: 138px;
     width: 152px;
     position: absolute;
-    /* border-radius: 143px; */
+    border-radius: 143px;
     top: 35px;
     left: 35px;
+} */
+
+/* .box-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 95px;
+    background-color: red;
+} */
+
+
+.img_inner_box {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
 }
 
 .box-items {
@@ -263,6 +201,173 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    height: 100%;
     position: relative;
-    top: 95px;
+    top: 20px;
+}
+
+.inner-box {
+    /* position: relative;
+    top: 188px; */
+    height: 140px;
+    width: 145px;
+    background-color: white;
+    margin-left: 65px;
+    border-radius: 23px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.forall {
+    text-align: center;
+    position: relative;
+    /* top: 215px; */
+}
+
+.achive_head {
+    font-size: 25px;
+    font-family: "Montserrat-bold";
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 10px;
+    color: #ffff;
+}
+
+.comman_class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: "Montserrat-bold";
+    /* text-align: center; */
+    margin-right: 12px;
+    color: #ffff;
+}
+
+.pic_count {
+    font-size: 36px;
+    font-family: "Montserrat-extrabold";
+    color: #5d5b5b;
+}
+
+.img_tags_para {
+    font-size: 15px;
+    font-family: "Montserrat-extrabold";
+    color: #5d5b5b;
+}
+
+/* clients user */
+
+#client_use {
+    /* background-color: #fff; */
+    /* position: relative; */
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.clients_head {
+    font-size: 30px;
+    font-family: "Montserrat-Extrabold";
+    text-align: center;
+    margin-bottom: 22px;
+    margin-top: 10px;
+}
+
+.number_count {
+    font-size: 80px;
+    font-family: "Montserrat-extrabold";
+    margin-right: 10px;
+}
+
+/* testimoney */
+
+#test-mony {
+    flex-direction: column;
+    /* position: relative; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.head_testm {
+    font-size: 34px;
+    font-family: "Montserrat-ExtraBold";
+    color: #2096f3;
+    margin-bottom: 60px;
+}
+
+.swiper {
+    width: 1170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+    position: relative;
+    right: 108px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 330px !important;
+    height: 300px;
+    /* filter: blur(1px); */
+    opacity: 0.5;
+    backface-visibility: visible;
+}
+
+
+.swiper-slide-active {
+    filter: blur(0px);
+    opacity: 1;
+
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 550px;
+    background: #fff;
+    border: 2px solid #5e5eff;
+    padding: 8px 18px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+    border-radius: 6px;
+}
+
+.top_info {
+    display: flex;
+    align-items: center;
+
+}
+
+.test_name {
+    margin: 3px 0px;
+    font-size: 28px;
+    font-family: "Montserrat-semibold";
+}
+
+.test_img {
+    height: 16px;
+}
+
+.sub_info {}
+
+/* Swiper Change */
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none !important;
 }
