@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+    <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
+</head>
+
+<body>
+    <style>
+        #carousel3d {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            /* background-color: #fff; */
+            padding: 10px;
+            transition: all 0.2s;
+
+        }
+
+        .carousel-3d-slide {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            top: 0;
+            border-color: #000;
+            border-color: rgba(0, 0, 0, .4);
+            border-style: none !important;
+            background-size: cover;
+            background-color: transparent;
+            display: block;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: left;
+            width: 470px !important;
+            /* height: 0px !important; */
+        }
+
+
+        .carousel-3d-slide .current {
+            background-color: #333;
+            color: #fff;
+
+        }
+
+
+        #test-mony {
+            flex-direction: column;
+            /* position: relative; */
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .head_testm {
+            font-size: 34px;
+            font-family: "Montserrat-ExtraBold";
+            color: #2096f3;
+            margin-bottom: 60px;
+        }
+
+        .swiper {
+            width: 1170px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-wrapper {
+            position: relative;
+            right: 108px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 330px !important;
+            height: 300px;
+            /* filter: blur(1px); */
+            opacity: 0.5;
+        }
+
+
+        .swiper-slide-active {
+            filter: blur(0px);
+            opacity: 1;
+
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            /* height: 250px;
+            width: 550px; */
+            background: #fff;
+            border: 2px solid #5e5eff;
+            padding: 8px 18px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+            border-radius: 6px;
+        }
+
+        .top_info {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .test_name {
+            margin: 3px 0px;
+            font-size: 28px;
+            font-family: "Montserrat-semibold";
+        }
+
+        .test_img {
+            height: 16px;
+        }
+    </style>
+    <!-- Swiper -->
+    <div id="carousel3d">
+        <carousel-3d :perspective="10" :space="200" :display="5" :controls-visible="true"
+            :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60"
+            :clickable="true" :autoplay="false" :autoplay-timeout="1000">
+            <slide :index="0">
+                <div class="testimonials">
+                    <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                            <img height="55px" src="./Icons/face.png" alt="">
+                        </div>
+                        <div>
+                            <p class="test_name">John Dev</p>
+                            <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="para_on_para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                            tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                            quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Hic nesciunt vero minima vel laudantium.
+                        </p>
+                    </div>
+                </div>
+            </slide>
+            <slide :index="1">
+
+                <div class="testimonials">
+                    <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                            <img height="55px" src="./Icons/face.png" alt="">
+                        </div>
+                        <div>
+                            <p class="test_name">John Dev</p>
+                            <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                            tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                            quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Hic nesciunt vero minima vel laudantium.
+                        </p>
+                    </div>
+                </div>
+            </slide>
+            <slide :index="2">
+                <div class="testimonials">
+                    <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                            <img height="55px" src="./Icons/face.png" alt="">
+                        </div>
+                        <div>
+                            <p class="test_name">John Dev</p>
+                            <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                            tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                            quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Hic nesciunt vero minima vel laudantium.
+                        </p>
+                    </div>
+                </div>
+            </slide>
+            <slide :index="3">
+                <div class="testimonials">
+                    <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                            <img height="55px" src="./Icons/face.png" alt="">
+                        </div>
+                        <div>
+                            <p class="test_name">John Dev</p>
+                            <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                            tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                            quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Hic nesciunt vero minima vel laudantium.
+                        </p>
+                    </div>
+                </div>
+            </slide>
+            <slide :index="4">
+                <div class="testimonials">
+                    <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                            <img height="55px" src="./Icons/face.png" alt="">
+                        </div>
+                        <div>
+                            <p class="test_name">John Dev</p>
+                            <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                            tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                            quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Hic nesciunt vero minima vel laudantium.
+                        </p>
+                    </div>
+                </div>
+            </slide>
+            <slide :index="5">
+                <div class="testimonials">
+                    <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                            <img height="55px" src="./Icons/face.png" alt="">
+                        </div>
+                        <div>
+                            <p class="test_name">John Dev</p>
+                            <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                            tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                            quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Hic nesciunt vero minima vel laudantium.
+                        </p>
+                    </div>
+                </div>
+            </slide>
+
+
+        </carousel-3d>
+    </div>
+    <script>
+
+
+        new Vue({
+            el: '#carousel3d',
+            data: {
+                slides: 7
+            },
+            components: {
+                'carousel-3d': window['carousel-3d'].Carousel3d,
+                'slide': window['carousel-3d'].Slide
+            }
+        })
+
+
+        // var swiper = new Swiper('.swiper-container', {
+        //     slidesPerView: 'auto',
+        //     centeredSlides: true,
+        //     spaceBetween: 30,
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true,
+        //     },
+        // });
+
+
+        // var swiper = new Swiper(".swiper-container", {
+        //     effect: "coverflow",
+        //     grabCursor: true,
+        //     centeredSlides: true,
+        //     initialSlide: 2,
+        //     slidesPerView: "auto",
+        //     coverflowEffect: {
+        //         rotate: 0,
+        //         stretch: 0,
+        //         depth: 100,
+        //         modifier: 1,
+        //         slideShadows: true,
+        //     },
+        //     loop: true,
+        //     autoplay: {
+        //         delay: 3000,
+        //         disableOnInteraction: true,
+        //         reverseDirection: false,
+        //     },
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //     },
+        // });
+
+
+        /*------------------------------
+            Album Cover Slider
+    --------------------------------*/
+        //start added by Chase
+        var a = document.getElementsByTagName("a");
+        var cfImg = document.getElementsByClassName("coverflow__image")
+
+        var scaleI = 0;
+        for (scaleI; scaleI < a.length; scaleI++) {
+            if (scaleI === 3) {
+                continue;
+            } else {
+                a[scaleI].style.cursor = "default";
+                a[scaleI].addEventListener("click", prevDef);
+            }
+        }
+
+        function prevDef(e) {
+            e.preventDefault();
+        }
+
+        function forScale(coverflowPos) {
+            for (scaleI = 0; scaleI < a.length; scaleI++) {
+                a[scaleI].style.cursor = "default";
+                a[scaleI].addEventListener("click", prevDef);
+            }
+            for (scaleI = 0; scaleI < cfImg.length; scaleI++) {
+                if (cfImg[scaleI].getAttribute("data-coverflow-index") == coverflowPos) {
+                    cfImg[scaleI].parentElement.style.cursor = "pointer";
+                    cfImg[scaleI].parentElement.removeEventListener("click", prevDef);
+                }
+            }
+        }
+        //end added by Chase
+
+        function setupCoverflow(coverflowContainer) {
+            var coverflowContainers;
+
+            if (typeof coverflowContainer !== "undefined") {
+                if (Array.isArray(coverflowContainer)) {
+                    coverflowContainers = coverflowContainer;
+                } else {
+                    coverflowContainers = [coverflowContainer];
+                }
+            } else {
+                coverflowContainers = Array.prototype.slice.apply(document.getElementsByClassName('coverflow'));
+            }
+
+            coverflowContainers.forEach(function (containerElement) {
+                var coverflow = {};
+                var prevArrows, nextArrows;
+
+                //capture coverflow elements
+                coverflow.container = containerElement;
+                coverflow.images = Array.prototype.slice.apply(containerElement.getElementsByClassName('coverflow__image'));
+                coverflow.position = Math.floor(coverflow.images.length / 2) + 1;
+
+                //set indicies on images
+                coverflow.images.forEach(function (coverflowImage, i) {
+                    coverflowImage.dataset.coverflowIndex = i + 1;
+                });
+
+                //set initial position
+                coverflow.container.dataset.coverflowPosition = coverflow.position;
+
+                //get prev/next arrows
+                prevArrows = Array.prototype.slice.apply(coverflow.container.getElementsByClassName("prev-arrow"));
+                nextArrows = Array.prototype.slice.apply(coverflow.container.getElementsByClassName("next-arrow"));
+
+                //add event handlers
+                function setPrevImage() {
+                    coverflow.position = Math.max(1, coverflow.position - 1);
+                    coverflow.container.dataset.coverflowPosition = coverflow.position;
+                    //call the functin forScale added
+                    forScale(coverflow.position);
+                }
+
+                function setNextImage() {
+                    coverflow.position = Math.min(coverflow.images.length, coverflow.position + 1);
+                    coverflow.container.dataset.coverflowPosition = coverflow.position;
+                    //call the function Chase added
+                    forScale(coverflow.position);
+                }
+
+                function jumpToImage(evt) {
+                    coverflow.position = Math.min(coverflow.images.length, Math.max(1, evt.target.dataset.coverflowIndex));
+                    coverflow.container.dataset.coverflowPosition = coverflow.position;
+                    //start added by Chase
+                    setTimeout(function () {
+                        forScale(coverflow.position);
+                    }, 1);
+                    //end added by Chase
+                }
+
+                function onKeyPress(evt) {
+                    switch (evt.which) {
+                        case 37: //left arrow
+                            setPrevImage();
+                            break;
+                        case 39: //right arrow
+                            setNextImage();
+                            break;
+                    }
+                }
+                prevArrows.forEach(function (prevArrow) {
+                    prevArrow.addEventListener('click', setPrevImage);
+                });
+                nextArrows.forEach(function (nextArrow) {
+                    nextArrow.addEventListener('click', setNextImage);
+                });
+                coverflow.images.forEach(function (image) {
+                    image.addEventListener('click', jumpToImage);
+                });
+                window.addEventListener('keyup', onKeyPress);
+            });
+        }
+
+        setupCoverflow();
+    </script>
+</body>

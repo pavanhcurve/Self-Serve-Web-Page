@@ -87,6 +87,7 @@ var swiper = new Swiper(".test_mony_Swiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
+    initialSlide: 2,
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 0,
@@ -95,7 +96,93 @@ var swiper = new Swiper(".test_mony_Swiper", {
         modifier: 1,
         slideShadows: true,
     },
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+        reverseDirection: false,
+    },
     pagination: {
         el: ".swiper-pagination",
     },
 });
+
+// typo container
+
+var typing = false;
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 10 && typing == false) {
+        typing = true;
+        typeIt("This is some funky typed text.");
+    }
+});
+
+function typeIt(text) {
+    $("#typed_output").typed({
+        strings: [text],
+        typeSpeed: 25,
+        startDelay: 1000,
+        showCursor: false,
+        // backDelay: 750, // pause before backspacing
+        loop: false, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+        callback: function () { }
+        // call function after typing is done. You can use this to set the typing variable to false if you wanted so that your text types again.
+        // callback: function(){typing = false; } 
+    });
+}
+
+
+
+// owl carousal
+
+// $('.owl-carousel').owlCarousel({
+//     loop: true,
+//     margin: 50,
+//     autoplay: true,
+//     autoplayTimeout: 5000,
+//     slideTransition: 'linear',
+//     autoplaySpeed: 5000,
+//     autoplayHoverPause: false,
+//     responsiveClass: true,
+//     responsive: {
+//         0: {
+//             items: 1,
+//             nav: false
+//         },
+//         600: {
+//             items: 8,
+//             nav: false
+//         },
+//         1000: {
+//             items: 5,
+//             nav: true,
+//         }
+//     }
+// });
+
+
+// owl 2
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    // navText: [
+    //     "<i class='fa fa-caret-left'></i>",
+    //     "<i class='fa fa-caret-right'></i>"
+    // ],
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+})

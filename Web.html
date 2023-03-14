@@ -6,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
-    <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/CSS/web_css.css"> -->
+    <link rel="stylesheet" href="./CSS/dummycss.css">
     <script src="./JavaScript/web_js.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+    <!-- owl caraousal
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
 </head>
 
 <body class="mp0">
@@ -119,11 +131,24 @@
             <img src="./Icons/logos/logo12.png" width="120" height="100" alt="Natural" />
         </marquee>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section id="test-mony">
         <h2 class="head_testm">TESTIMONIALS</h2>
-        <div class="swiper test_mony_Swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+        <div class="new_swiper test_mony_Swiper">
+            <div class="swiper_newwrap">
+                <div class="new_swiper_slide">
                     <div class="testimonials">
                         <div class="top_info">
                             <div class="sub_info" style="margin: 3px 12px;">
@@ -212,6 +237,11 @@
         </div>
 
     </section>
+    <section>
+        <div class="typo_container">
+            <h1 id="typed_output"></h1>
+        </div>
+    </section>
     </div>
     <script>
         // About Us Swiper
@@ -235,6 +265,28 @@
             // }
         });
 
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            // navText: [
+            //     "<i class='fa fa-caret-left'></i>",
+            //     "<i class='fa fa-caret-right'></i>"
+            // ],
+            autoplay: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
     </script>
 </body>
 
