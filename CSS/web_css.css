@@ -24,7 +24,7 @@ a {
 body{
     height: 100%;
     width: 100%;
-    background: url('/Icons/bg.png') no-repeat;
+    background: url('/Icons/bg2.png') no-repeat;
     background-size:cover;
     /* min-height: 100vh; */
 }
@@ -456,7 +456,7 @@ h3 {
 }
 
 .blue_bg {
-    background: url(/Icons/achive-bg.png) no-repeat;
+    background: url(/Icons/achive-bg.png) repeat;
     height: 62%;
     width: 100%;
     /* position: relative; */
@@ -560,6 +560,7 @@ h3 {
     font-family: "Montserrat-extrabold";
     margin-right: 10px;
 }
+
 
 /* testimoney */
 
@@ -824,12 +825,28 @@ h3 {
     margin-top: -250px;
     z-index: -1;
 }
-
+#selfserve{
+    margin-top: 650px;
+}
+.abs_self{
+    position: absolute;
+    left: 0px;
+    top: -610px;
+    /* justify-content: center; */
+    width: 100%;
+    scale: 0.9;
+    /* text-align: center; */
+    /* align-items: center; */
+    height: auto;
+    display: flex;
+    z-index: -5;
+}
 #selfserve .self-container {
     background: url("/Icons/selfserve-bg.png") no-repeat center center/cover;
-    z-index: 1;
+    /* z-index: 1; */
     width: 100%;
-    margin-top: -650px;
+    position: relative;
+    /* margin-top: -650px; */
 }
 
 #selfserve .self-title {
@@ -957,6 +974,7 @@ h3 {
     text-align: center;
     padding: 20px 0;
 }
+
 
 @media (max-width: 900px) {
     /* .options {
