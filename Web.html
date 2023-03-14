@@ -12,25 +12,22 @@
 </head>
 <body class="mp0">
     <div class="complete_container flx_col">
-        <!-- <section class="navbar flx_row">
-            <div class="Hlogo">
-                <img src="/Icons/logo.png" height="54px" width="300px">
+        <div id="video-modal" class="modal">
+            <div class="modal-content">
+              <span class="close colorblack">&times;</span>
+              <video id="modal-video" controls>
+                <source src="Icons/explainer.mp4" type="video/mp4">
+                <!-- <source src="path/to/video.webm" type="video/webm"> -->
+              </video>
             </div>
-            <div class="options flx_row">
-                <div>Home</div>
-                <div>About US</div>
-                <div>Library</div>
-                <div>Self Serve Tool</div>
-                <div>Contact US</div>
-            </div>
-        </section> -->
+        </div>
         <div class="navbar flx_row">
             <div class="Hlogo">
                 <img src="/Icons/logo.png" height="54px" width="300px">
             </div>
             <div class="options flx_row">
                 <div><a href="#home">Home</a></div>
-                <div><a href="#about">About Us</a></div>
+                <div><a href="#about_us">About Us</a></div>
                 <div><a href="#library">Library</a></div>
                 <div><a href="#selfserve">Self Serve Tool</a></div>
                 <div><a href="#contact">Contact Us</a></div>
@@ -65,11 +62,12 @@
                         <img src="/Icons/visit button.png">
                     </div>
                 </div>
-                <div class="img_vid_content">
+                <div class="img_vid_content" >
                     <img src="/Icons/tab.png">
+                    <img src="/Icons/play btn.png" class="play_abs" id="onplay">
                 </div>
             </div>
-            <div class="ab_us flx_col">
+            <div class="ab_us flx_col" id="about_us">
                 <div class="about_hrading colorblue">
                     About Us
                 </div>
@@ -156,9 +154,9 @@
 
                         </div>
                     </div>
-                    <div class="swiper-left-btn"><img style="position: absolute;top: 200px;left: 0px;height: 40px;"
+                    <div class="swiper-left-btn"><img style="position: absolute;top: 250px;left: 0px;height: 40px;"
                             src="/Icons/leftarrow.png" alt=""></div>
-                    <div class="swiper-right-btn"><img style="position: absolute;top: 200px;right: 0px;height: 40px;"
+                    <div class="swiper-right-btn"><img style="position: absolute;top: 250px;right: 0px;height: 40px;"
                             src="/Icons/rightarrow.png" alt=""></div>
                 </div>
             </div>
