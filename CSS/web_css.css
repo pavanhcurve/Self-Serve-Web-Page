@@ -1089,18 +1089,7 @@ h3 {
 
 @media (max-width: 700px) {}
 
-@media (max-width: 500px) {
-    #selfserve .steps {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #selfserve .vid-container video {
-        width: 350px;
-        height: 500px;
-    }
-}
+@media (max-width: 500px) {}
 
 @media (max-width: 1900px) {
     #selfserve .icons .icon img {
@@ -1390,6 +1379,10 @@ h3 {
     #contact {
         scale: 0.7;
     }
+
+    #selfserve .icons .icon:first-child {
+        display: none;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1399,6 +1392,17 @@ h3 {
 
     #selfserve .cta .cta-text {
         font-size: 20px;
+    }
+
+    #selfserve .steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #selfserve .vid-container video {
+        width: 350px;
+        height: 500px;
     }
 }
 

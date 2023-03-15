@@ -116,50 +116,65 @@ const menu = () => {
 
 
 // Animations
+// gsap.from(".step", {
+//     scale: 0,
+//     opacity: 0,
+//     delay: 1,
+//     duration: 0.6,
+//     ease: "bounce"
+// });
 
-gsap.from(".cta-btn", {
-    scale: 0,
-    opacity: 0,
-    stagger: 0.05,
-    delay: 1,
-    duration: 0.3,
-    ease: "power1"
-});
+// gsap.from(".step-text", {
+//     y: -30,
+//     opacity: 0,
+//     delay: 1.5,
+//     duration: 0.6,
+//     ease: "power0"
+// });
 
-gsap.from(".cta-text", {
-    opacity: 0,
-    y: -20,
-    stagger: 0.05,
-    delay: 1.5,
-    duration: 0.6,
-    ease: "power0"
-});
+// gsap.from(".selfgif", {
+//     y: 300,
+//     scale: 0,
+//     delay: 1.5,
+//     duration: 1,
+//     ease: "elastic"
+// });
 
-gsap.from(".selfgif", {
-    y: 300,
-    scale: 0,
-    delay: 1.5,
-    duration: 1,
-    ease: "elastic"
-});
+// gsap.from(".cta-btn", {
+//     scale: 0,
+//     opacity: 0,
+//     stagger: 0.05,
+//     delay: 1,
+//     duration: 0.3,
+//     ease: "power1"
+// });
 
-gsap.from(".icon1", {
-    scale: 0,
-    stagger: 0.05,
-    delay: 0.2,
-    duration: 1,
-    ease: "elastic"
-});
+// gsap.from(".cta-text", {
+//     opacity: 0,
+//     y: -20,
+//     stagger: 0.05,
+//     delay: 1.5,
+//     duration: 0.6,
+//     ease: "power0"
+// });
 
-gsap.from(".icon2", {
-    y: 300,
-    x: -300,
-    opacity: 0,
-    delay: 1,
-    stagger: 0.05,
-    duration: 1,
-    ease: "power0"
-});
+// gsap.from(".icon1", {
+//     scale: 0,
+//     stagger: 0.05,
+//     delay: 0.2,
+//     duration: 1,
+//     ease: "elastic"
+// });
+
+// gsap.from(".icon2", {
+//     y: 300,
+//     x: -300,
+//     opacity: 0,
+//     delay: 1,
+//     stagger: 0.05,
+//     duration: 1,
+//     ease: "power0"
+// });
 
 gsap.from(".icon3", {
     scale: 0,
