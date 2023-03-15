@@ -15,26 +15,26 @@ var btn = document.getElementById("onplay");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-  video.classList.add("scale-video"); 
-  video.play();
+btn.onclick = function () {
+    modal.style.display = "block";
+    video.classList.add("scale-video");
+    video.play();
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-//   video.classList.remove("scale-video");
-  video.pause();
+span.onclick = function () {
+    modal.style.display = "none";
+    //   video.classList.remove("scale-video");
+    video.pause();
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    // video.classList.remove("scale-video");
-    video.pause();
-  }
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        // video.classList.remove("scale-video");
+        video.pause();
+    }
 }
 
 
@@ -115,3 +115,28 @@ var swiper = new Swiper(".test_mony_Swiper", {
 });
 
 
+// Animations
+gsap.from(".icon", {
+    scale: 0,
+    stagger: 0.05,
+    delay: 0.2,
+    duration: 0.8,
+    ease: "bounce"
+});
+
+gsap.from(".cta-btn", {
+    scale: 0,
+    opacity: 0,
+    stagger: 0.05,
+    delay: 2,
+    duration: 0.3,
+    ease: "power1"
+});
+
+gsap.from(".cta-text", {
+    opacity: 0,
+    stagger: 0.05,
+    delay: 3,
+    duration: 0.6,
+    ease: "power0"
+});

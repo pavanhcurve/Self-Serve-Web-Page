@@ -1026,7 +1026,7 @@ h3 {
 
 #contact .form-title {
     font-family: "Montserrat-ExtraBold";
-    font-size: 33px;
+    font-size: 30px;
     color: #0A6CC3;
     text-align: center;
     margin-bottom: 5px;
@@ -1108,16 +1108,6 @@ h3 {
     }
 }
 
-/* @media(max-width:750px) {
-    .options {
-        display: none;
-    }
-
-    .menu-wrap {
-        display: block;
-    }
-    
-} */
 @media screen and (min-width: 1900px) {
     .btn_copy_content {
         font-size: 60px;
@@ -1183,6 +1173,14 @@ h3 {
 
     #selfserve {
         margin-top: 460px;
+    }
+
+    #selfserve .self-title h4 {
+        font-size: 30px;
+    }
+
+    #selfserve .steps .step .step-text {
+        font-size: 20px;
     }
 
     #footer .nav-menu {
@@ -1396,8 +1394,12 @@ h3 {
         scale: 0.25;
     }
 
-    #selfserve .icons {
+    /* #selfserve .icons {
         display: none;
+    } */
+
+    #selfserve .cta .cta-text {
+        font-size: 20px;
     }
 }
 
@@ -1471,9 +1473,13 @@ h3 {
     #selfserve .cta .cta-text {
         font-size: 20px;
     }
+
+    #selfserve .self-title h4 {
+        font-size: 22px;
+    }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 376px) {
     #selfserve .abs_self {
         scale: 0.2;
     }
