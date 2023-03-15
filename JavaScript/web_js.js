@@ -158,13 +158,12 @@ const menu = () => {
 //     ease: "power0"
 // });
 
-// gsap.from(".icon1", {
-//     scale: 0,
-//     stagger: 0.05,
-//     delay: 0.2,
-//     duration: 1,
-//     ease: "elastic"
-// });
+gsap.from(".icon1", {
+    scale: 0.8,
+    duration: 0.6,
+    repeat: -1,
+    ease: "power0"
+});
 
 // gsap.from(".icon2", {
 //     y: 300,
