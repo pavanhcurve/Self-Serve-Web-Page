@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .marquee-full-width {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .marquee-box {
+            overflow-x: hidden !important;
+            display: flex !important;
+            flex-direction: row !important;
+            position: relative;
+            width: 100%;
+        }
+
+        .marquee {
+            flex: 0 0 auto;
+            min-width: 100%;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            animation: marqueescroll 10s linear 0s infinite;
+            animation-play-state: running;
+            animation-delay: 0s;
+            animation-direction: normal;
+        }
+
+        .marquee figure {
+            margin-right: 2.5rem;
+            margin-left: -2rem;
+            padding: -1px;
+            max-width: 253px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .marquee figcaption {
+            display: none;
+            font-weight: 80%;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .marquee img {
+            margin: 0 auto;
+            height: auto;
+            max-height: 4.5rem;
+            max-width: 100%;
+            background: #fdfdfd;
+            border: none;
+        }
+
+        .marquee-box:hover div {
+            animation-play-state: running;
+        }
+
+        .marquee-box:active div {
+            animation-play-state: running;
+        }
+
+        @keyframes marqueescroll {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+
+
+    <div class="container py-5">
+        <div class="row my-5">
+            <div class="col-12">
+                <div class="marquee-full-width">
+                    <div class="marquee-box">
+                        <div class="marquee">
+                            <figure>
+                                <img src="./Icons/logos/logo1.png" alt="featured creator">
+                                <figcaption>Sanjeev kapoor Academy</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo2.png" alt="featured creator">
+                                <figcaption>Tuition Fe by BSE</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo3.png" alt="featured creator">
+                                <figcaption>Symboisis Centre For Entrepreneurship & Innovation</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo4.png" alt="featured creator">
+                                <figcaption>Srimantha</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo5.png" alt="featured creator">
+                                <figcaption>Gurukul by 100X VC</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo6.png" alt="featured creator">
+                                <figcaption>Shikshamaitri</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Edifypath</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo8.png" alt="featured creator">
+                                <figcaption>Indian Energy Skill Development by UPES</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo9.png" alt="featured creator">
+                                <figcaption>Meghnad Desai Academy Of Economics</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo10.png" alt="featured creator">
+                                <figcaption>Beamusician</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo11.png" alt="featured creator">
+                                <figcaption>Fundenable</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo12.png" alt="featured creator">
+                                <figcaption>Binge Marketing by Gopal Krishnan</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo1.png" alt="featured creator">
+                                <figcaption>Sonal holland Wine Academy</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo1.png" alt="featured creator">
+                                <figcaption>Purple Coach</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>SBY Academy</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Dipti Vartak</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Champ Excel</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Mints Recipes</figcaption>
+                            </figure>
+                        </div>
+                        <div class="marquee">
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Sanjeev kapoor Academy</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Tuition Fe by BSE</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Symboisis Centre For <br />Entrepreneurship & Innovation</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Srimantha</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Gurukul by 100X VC</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Shikshamaitri</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo1.png" alt="featured creator">
+                                <figcaption>Edifypath</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo2.png" alt="featured creator">
+                                <figcaption>Indian Energy Skill Development by UPES</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo3.png" alt="featured creator">
+                                <figcaption>Meghnad Desai Academy <br />Of Economics</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo4.png" alt="featured creator">
+                                <figcaption>Beamusician</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo5.png" alt="featured creator">
+                                <figcaption>Fundenable</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo6.png" alt="featured creator">
+                                <figcaption>Binge Marketing by Gopal Krishnan</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo7.png" alt="featured creator">
+                                <figcaption>Sonal holland Wine Academy</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo8.png" alt="featured creator">
+                                <figcaption>Purple Coach</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo9.png" alt="featured creator">
+                                <figcaption>SBY Academy</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo10.png" alt="featured creator">
+                                <figcaption>Dipti Vartak</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo11.png" alt="featured creator">
+                                <figcaption>Champ Excel</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./Icons/logos/logo12.png" alt="featured creator">
+                                <figcaption>Mints Recipes</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
