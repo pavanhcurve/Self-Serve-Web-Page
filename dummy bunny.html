@@ -14,6 +14,14 @@
 
 <body>
     <style>
+        .face_img {
+            height: 55px;
+        }
+
+        .para_on_para {
+            font-size: 15px;
+        }
+
         .carousel-3d-slider {
             width: 470px !important;
             height: 100% !important;
@@ -263,6 +271,46 @@
                 width: 65% !important;
             }
         }
+
+        @media only screen and (max-width: 400px) {
+            .face_img {
+                height: 25px;
+            }
+
+            .test_name {
+                margin: 3px 0px;
+                font-size: 15px;
+                font-family: "Montserrat-semibold";
+            }
+
+            .test_img {
+                height: 12px;
+            }
+
+            .para_on_para {
+                font-size: 10px;
+            }
+
+            .carousel-3d-slider {
+                width: 100% !important;
+            }
+
+            .carousel-3d-slide.current {
+                transform: translateX(0px) translateZ(40px) translateY(25px) rotateY(0deg) !important;
+            }
+
+            .testimonials {
+                scale: 0.75;
+            }
+
+            .left-1 {
+                transform: translateX(-85px) translateZ(-249px) rotateY(0deg) !important;
+            }
+
+            .right-1 {
+                transform: translateX(85px) translateZ(-249px) rotateY(0deg) !important;
+            }
+        }
     </style>
     <!-- Swiper -->
     <div id="carousel3d">
@@ -273,7 +321,7 @@
                 <div class="testimonials">
                     <div class="top_info">
                         <div class="sub_info" style="margin: 3px 12px;">
-                            <img height="55px" src="./Icons/face.png" alt="">
+                            <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
                             <p class="test_name">John Dev</p>
@@ -291,11 +339,10 @@
                 </div>
             </slide>
             <slide :index="1">
-
                 <div class="testimonials">
                     <div class="top_info">
                         <div class="sub_info" style="margin: 3px 12px;">
-                            <img height="55px" src="./Icons/face.png" alt="">
+                            <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
                             <p class="test_name">John Dev</p>
@@ -303,7 +350,7 @@
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p class="para_on_para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
                             tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
                             quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -316,7 +363,7 @@
                 <div class="testimonials">
                     <div class="top_info">
                         <div class="sub_info" style="margin: 3px 12px;">
-                            <img height="55px" src="./Icons/face.png" alt="">
+                            <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
                             <p class="test_name">John Dev</p>
@@ -324,7 +371,7 @@
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p class="para_on_para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
                             tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
                             quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -337,7 +384,7 @@
                 <div class="testimonials">
                     <div class="top_info">
                         <div class="sub_info" style="margin: 3px 12px;">
-                            <img height="55px" src="./Icons/face.png" alt="">
+                            <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
                             <p class="test_name">John Dev</p>
@@ -345,7 +392,7 @@
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p class="para_on_para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
                             tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
                             quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -358,7 +405,7 @@
                 <div class="testimonials">
                     <div class="top_info">
                         <div class="sub_info" style="margin: 3px 12px;">
-                            <img height="55px" src="./Icons/face.png" alt="">
+                            <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
                             <p class="test_name">John Dev</p>
@@ -366,7 +413,7 @@
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p class="para_on_para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
                             tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
                             quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -379,7 +426,7 @@
                 <div class="testimonials">
                     <div class="top_info">
                         <div class="sub_info" style="margin: 3px 12px;">
-                            <img height="55px" src="./Icons/face.png" alt="">
+                            <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
                             <p class="test_name">John Dev</p>
@@ -387,7 +434,7 @@
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p class="para_on_para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
                             tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
                             quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
