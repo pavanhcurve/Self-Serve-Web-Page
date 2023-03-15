@@ -980,15 +980,28 @@ h3 {
 }
 
 #selfserve .icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
     height: auto;
-    scale: 0.75;
 }
 
-#selfserve .icons .icon:nth-child(2) {
-    margin-left: -230px;
+#selfserve .icons .icon:first-child,
+#selfserve .icons .icon:last-child {
+    margin-top: -100px;
 }
+
+#selfserve .icons .icon img {
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+}
+
+/* #selfserve .icons .icon:nth-child(2) {
+    left: -230px;
+} */
 
 #footer {
     background: url('/Icons/footerbg.png') no-repeat center center/cover;
@@ -1074,25 +1087,6 @@ h3 {
 }
 
 
-@media (max-width: 900px) {
-    /* .options {
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        font-family: "Montserrat-Bold";
-        font-size: 16px;
-    } */
-
-    #selfserve .vid-container video {
-        width: 800px;
-        height: 1100px;
-    }
-
-    #selfserve .icons .icon {
-        scale: 0.5;
-    }
-}
-
 @media (max-width: 700px) {}
 
 @media (max-width: 500px) {
@@ -1108,6 +1102,12 @@ h3 {
     }
 }
 
+@media (max-width: 1900px) {
+    #selfserve .icons .icon img {
+        max-width: 280px;
+    }
+}
+
 @media screen and (min-width: 1900px) {
     .btn_copy_content {
         font-size: 60px;
@@ -1118,9 +1118,13 @@ h3 {
     }
 }
 
-@media screen and (max-width:1420px) {
+@media screen and (max-width:1450px) {
     .options {
         width: auto;
+    }
+
+    #selfserve .icons .icon img {
+        max-width: 250px;
     }
 }
 
@@ -1186,6 +1190,10 @@ h3 {
     #footer .nav-menu {
         font-size: 20px;
     }
+
+    #selfserve .icons .icon img {
+        max-width: 200px;
+    }
 }
 
 @media screen and (max-width:1010px) {
@@ -1231,6 +1239,15 @@ h3 {
     #selfserve .abs_self {
         scale: 0.5;
     }
+
+    #selfserve .icons .icon img {
+        max-width: 150px;
+    }
+
+    #selfserve .icons .icon:first-child,
+    #selfserve .icons .icon:last-child {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width:830px) {
@@ -1268,7 +1285,6 @@ h3 {
     .menu-wrap {
         top: -5px;
     }
-
 
     .menu-wrap .toggler {
         top: 12px;
@@ -1345,19 +1361,6 @@ h3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
-    #selfserve .icons .icon {
-        scale: 0.75;
-    }
-
-    #selfserve .icons .icon:nth-child(2) {
-        margin-left: 0;
-    }
-
-    #selfserve .icons .icon:first-child,
-    #selfserve .icons .icon:last-child {
-        display: none;
-    }
 }
 
 @media screen and (max-width:700px) {
@@ -1393,10 +1396,6 @@ h3 {
     #selfserve .abs_self {
         scale: 0.25;
     }
-
-    /* #selfserve .icons {
-        display: none;
-    } */
 
     #selfserve .cta .cta-text {
         font-size: 20px;
