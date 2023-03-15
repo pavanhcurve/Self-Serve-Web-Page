@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+    <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    
 </head>
 <body class="mp0">
     <div class="complete_container flx_col">
@@ -59,12 +63,12 @@
                     <div class="colorblue">Largest Dynamic</div>
                     <div class="colorblue">Creative Library</div>
                     <div class="visit_btn">
-                        <img src="/Icons/visit button.png">
+                        <img src="/Icons/visitbutton.png">
                     </div>
                 </div>
-                <div class="img_vid_content" >
+                <div class="img_vid_content" id="vidcontent">
                     <img src="/Icons/tab.png">
-                    <img src="/Icons/play btn.png" class="play_abs" id="onplay">
+                    <img src="/Icons/playbtn.png" class="play_abs" id="onplay">
                 </div>
             </div>
             <div class="ab_us flx_col" id="about_us">
@@ -75,11 +79,11 @@
                     Hockeycurve's Revolutionary Predictive Communication Engine uses Big Data & Artificial Intelligence to profile & identify high intent consumers & delivers dynamically created bespoke experiences to each one of them across devices.
                 </div>
                 <div class="lets_btn">
-                    <img src="/Icons/lets button.png">
+                    <img src="/Icons/letcreateanad.png">
                 </div>
             </div>
         </section>
-        <section class="swipe_card_container">
+        <!-- <section class="swipe_card_container">
             <div id="usp_head_container">
                 <div class="container">
                     <div class="swiper slider">
@@ -160,7 +164,7 @@
                             src="/Icons/rightarrow.png" alt=""></div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="dco_container flx_col colorblack">
             <div class="what_is_dco_content">
                 <div class="para_gif_content flx_row">
@@ -177,7 +181,7 @@
                         </div>
                     </div>
                     <div class="wh_dco_gif">
-                        <img src="/Icons/dco1.gif">
+                        <img src="/Icons/dco1.gif" id="change">
                     </div>
                 </div>
             </div>
@@ -189,7 +193,7 @@
                     <div class="why_dco flx_col">
                         <div class="s_head">Why <span class="colorblue">DCO?</span></div>
                         <div class="type flx_row">
-                            <div class="banner">Banner Blindness does not stand a chance</div>
+                            <div class="banner" id="banner">Banner Blindness does not stand a chance</div>
                             <div><img src="/Icons/bulletpoints.png"></div>
                         </div>
                         <div class="type flx_row">
@@ -223,9 +227,9 @@
                                 <div class="counter-value number_count" data-count="80">0 </div>
                             </div>
                             <div>
-                                <p style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';    font-size: 45px;">
+                                <p class="plus" style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';    font-size: 45px;">
                                     +</p>
-                                <p style="position: relative;top: -10px;">CLIENTS</p>
+                                <p class="cl" style="position: relative;top: -10px;">CLIENTS</p>
                             </div>
                         </div>
                         <div class="comman_class">
@@ -233,18 +237,18 @@
                                 <div class="counter-value number_count" data-count="100">0 </div>
                             </div>
                             <div>
-                                <p style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';font-size: 45px;">
+                                <p class="plus" style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';font-size: 45px;">
                                     +</p>
-                                <p style="position: relative;top: -10px;">PROJECTS</p>
+                                <p class="cl" style="position: relative;top: -10px;">PROJECTS</p>
                             </div>
                         </div>
                     </div>
                     <div class="box-items">
                         <div class="inner-box">
-                            <img src="./Icons/CTR Increase.gif" class="img_inner_box" alt="">
+                            <img src="./Icons/ctrincrease.gif" class="img_inner_box" alt="">
                             <div class="ctr_rating forall">
                                 <div id="counter">
-                                    <div style="    margin: 10px 0px;"><span class="counter-value pic_count"
+                                    <div style="margin: 10px 0px;"><span class="counter-value pic_count"
                                             data-count="230">0 </span><span class="pic_count">%
                                         </span>
                                         <p class="img_tags_para">CTR Increase</p>
@@ -252,10 +256,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-box"><img src="./Icons/3X Performance ROI.gif" class="img_inner_box" alt="">
+                        <div class="inner-box"><img src="./Icons/3xperform.gif" class="img_inner_box" alt="">
                             <div class="perform_roi forall">
                                 <div id="counter">
-                                    <div style="    margin: 10px 0px;"><span class="counter-value pic_count"
+                                    <div style="margin: 10px 0px;"><span class="counter-value pic_count"
                                             data-count="3">0 </span><span class="pic_count">X
                                         </span>
                                         <p class="img_tags_para">Performance ROI</p>
@@ -263,10 +267,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-box"><img src="./Icons/Sales lift for clients.gif" class="img_inner_box" alt="">
+                        <div class="inner-box"><img src="./Icons/saleslift.gif" class="img_inner_box" alt="">
                             <div class="user_tracked forall">
                                 <div id="counter">
-                                    <div style="    margin: 10px 0px;"><span class="counter-value pic_count"
+                                    <div style="margin: 10px 0px;"><span class="counter-value pic_count"
                                             data-count="200">0 </span><span class="pic_count">M
                                         </span>
                                         <p class="img_tags_para">Users Tracked <br>Per Month</p>
@@ -274,10 +278,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-box"><img src="./Icons/Users Tracked Per Month.gif" class="img_inner_box" alt="">
+                        <div class="inner-box"><img src="./Icons/usertrack.gif" class="img_inner_box" alt="">
                             <div class="sale_lift forall">
                                 <div id="counter">
-                                    <div style="    margin: 10px 0px;"><span class="pic_count">+</span> <span
+                                    <div style="margin: 10px 0px;"><span class="pic_count">+</span> <span
                                             class="counter-value pic_count" data-count="15">0
                                         </span><span class="pic_count">%
                                         </span>
@@ -296,24 +300,165 @@
                     product
                     offerings</span>
             </h2>
-            <marquee behavior="scroll" height="100px" direction="left" scroll
-                onmouseover="this.setAttribute('scrollamount', 0, 0);this.stop();"
-                onmouseout="this.setAttribute('scrollamount', 3, 0);this.start();" scrollamount="18" valign="center"
-                repeat="yes" loop=50>
-                <img src="./Icons/logo1.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo2.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo2.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo3.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo4.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo5.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo6.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo7.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo8.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo9.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo10.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo11.png" width="120" height="100" alt="Natural" />
-                <img src="./Icons/logo12.png" width="120" height="100" alt="Natural" />
-            </marquee>
+
+            <div class="marquee-full-width">
+                <div class="marquee-box">
+                  <div class="marquee">
+                    <figure>
+                      <img src="/Icons/logo1.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo2.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo3.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo4.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo5.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo6.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo7.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo8.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo9.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo10.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo11.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo12.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo1.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo2.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo3.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo4.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo5.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo6.png" alt="featured creator">
+                    </figure>
+                  </div>
+                  <div class="marquee">
+                    <figure>
+                      <img src="./Icons/logo7.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo8.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo9.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo10.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo11.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo12.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo1.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo2.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo3.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo4.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo5.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo6.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo7.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo8.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo9.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo10.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo11.png" alt="featured creator">
+                    </figure>
+                    <figure>
+                      <img src="./Icons/logo12.png" alt="featured creator">
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+
+            <!-- <div class="omkswipe">
+                <div class="omkswipe-track">
+                    <div class="track">
+                        <img src="./Icons/logo1.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo2.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo3.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo4.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo5.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo6.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo7.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo8.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo9.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo10.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo11.png" height="100" width="120" alt="" />
+                    </div>
+                    <div class="track">
+                        <img src="./Icons/logo12.png" height="100" width="120" alt="" />
+                    </div>
+                </div>
+            </div> -->
         </section>
         <section id="selfserve">
             <div class="self-container">
@@ -338,9 +483,11 @@
                     </div>
                 </div>
                 <div class="cta">
-                    <img src="/Icons/selfservecta.png" alt="btn">
+                    <div class="cta-btn">
+                        <h3 class="cta-text">Let's Create Ad</h3>
+                    </div>
                 </div>
-                <div class="icons">
+                <!-- <div class="icons">
                     <div class="icon">
                         <img src="/Icons/icon1.png" alt="icon1">
                     </div>
@@ -350,7 +497,7 @@
                     <div class="icon">
                         <img src="/Icons/icon3.png" alt="icon3">
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- <section id="test-mony">
@@ -446,6 +593,141 @@
             </div>
     
         </section> -->
+        <!-- <div id="carousel3d">
+            <carousel-3d :perspective="10" :space="200" :display="5" :controls-visible="true"
+                :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60"
+                :clickable="true" :autoplay="false" :autoplay-timeout="4000">
+                <slide :index="0">
+                    <div class="testimonials">
+                        <div class="top_info">
+                            <div class="sub_info" style="margin: 3px 12px;">
+                                <img height="55px" src="./Icons/face.png" alt="">
+                            </div>
+                            <div>
+                                <p class="test_name">John Dev</p>
+                                <img class="test_img" src="/Icons/3-Start.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="para_on_para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic nesciunt vero minima vel laudantium.
+                            </p>
+                        </div>
+                    </div>
+                </slide>
+                <slide :index="1">
+    
+                    <div class="testimonials">
+                        <div class="top_info">
+                            <div class="sub_info" style="margin: 3px 12px;">
+                                <img height="55px" src="./Icons/face.png" alt="">
+                            </div>
+                            <div>
+                                <p class="test_name">John Dev</p>
+                                <img class="test_img" src="/Icons/3-Start.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic nesciunt vero minima vel laudantium.
+                            </p>
+                        </div>
+                    </div>
+                </slide>
+                <slide :index="2">
+                    <div class="testimonials">
+                        <div class="top_info">
+                            <div class="sub_info" style="margin: 3px 12px;">
+                                <img height="55px" src="./Icons/face.png" alt="">
+                            </div>
+                            <div>
+                                <p class="test_name">John Dev</p>
+                                <img class="test_img" src="/Icons/3-Start.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic nesciunt vero minima vel laudantium.
+                            </p>
+                        </div>
+                    </div>
+                </slide>
+                <slide :index="3">
+                    <div class="testimonials">
+                        <div class="top_info">
+                            <div class="sub_info" style="margin: 3px 12px;">
+                                <img height="55px" src="/Icons/face.png" alt="">
+                            </div>
+                            <div>
+                                <p class="test_name">John Dev</p>
+                                <img class="test_img" src="/Icons/3-Start.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic nesciunt vero minima vel laudantium.
+                            </p>
+                        </div>
+                    </div>
+                </slide>
+                <slide :index="4">
+                    <div class="testimonials">
+                        <div class="top_info">
+                            <div class="sub_info" style="margin: 3px 12px;">
+                                <img height="55px" src="/Icons/face.png" alt="">
+                            </div>
+                            <div>
+                                <p class="test_name">John Dev</p>
+                                <img class="test_img" src="/Icons/3-Start.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic nesciunt vero minima vel laudantium.
+                            </p>
+                        </div>
+                    </div>
+                </slide>
+                <slide :index="5">
+                    <div class="testimonials">
+                        <div class="top_info">
+                            <div class="sub_info" style="margin: 3px 12px;">
+                                <img height="55px" src="/Icons/face.png" alt="">
+                            </div>
+                            <div>
+                                <p class="test_name">John Dev</p>
+                                <img class="test_img" src="/Icons/3-Start.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Hic nesciunt vero minima vel laudantium.
+                            </p>
+                        </div>
+                    </div>
+                </slide>
+    
+    
+            </carousel-3d>
+        </div> -->
         <footer id="footer">
             <div class="nav-menu flx_row">
                 <div><a href="#home">HOME</a></div>
