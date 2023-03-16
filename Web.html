@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
+    <title>Web - local</title>
     <link rel="stylesheet" type="text/css" href="/CSS/web_css.css">  
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -17,27 +17,32 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/swiper@6.4.8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@6.4.8/swiper-bundle.min.css">
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+        <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
     
 </head>
 <body class="mp0">
-    <div class="complete_container flx_col">
+    <div class="complete_container flx_col" id="home">
         <div id="video-modal" class="modal">
             <div class="modal-content">
-              <span class="close colorblack">&times;</span>
+              <span class="close colorblack user_none">&times;</span>
               <video id="modal-video" controls>
-                <source src="Icons/explainer.mp4" type="video/mp4">
+                <source src="https://do.hockeycurve.com/selfserve/icons/explainer.mp4" type="video/mp4">
                 <!-- <source src="path/to/video.webm" type="video/webm"> -->
               </video>
             </div>
         </div>
-        <div class="navbar flx_row">
+        <div class="navbar flx_row user_none">
             <div class="Hlogo">
-                <img src="/Icons/logo.png" height="54px" width="300px">
+                <img src="https://s.hcurvecdn.com/selfserve/icons/logo.png" height="54px" width="300px">
             </div>
             <div class="options flx_row">
                 <div><a href="#home">Home</a></div>
                 <div><a href="#about_us">About Us</a></div>
-                <div><a href="#library">Library</a></div>
+                <div><a href="#achive_container">achivements</a></div>
                 <div><a href="#selfserve">Self Serve Tool</a></div>
                 <div><a href="#contact">Contact Us</a></div>
             </div>
@@ -51,8 +56,8 @@
                         <div>
                             <ul>
                                 <li><a href="#home" onclick="menu()">Home</a></li>
-                                <li><a href="#about" onclick="menu()">About Us</a></li>
-                                <li><a href="#library" onclick="menu()">Library</a></li>
+                                <li><a href="#about_us" onclick="menu()">About Us</a></li>
+                                <li><a href="#achive_container" onclick="menu()">achivements</a></li>
                                 <li><a href="#selfserve" onclick="menu()">Self Serve Tool</a></li>
                                 <li><a href="#contact" onclick="menu()">Contact Us</a></li>
                             </ul>
@@ -61,19 +66,19 @@
                 </div>
             </div>
         </div>
-        <section class="about_us_container flx_col">
+        <section class="about_us_container flx_col user_none" id="about_us">
             <div class="flx_row para_vid">
                 <div class="btn_copy_content flx_col">
                     <div class="colorblack">Worlds</div>
                     <div class="colorblue">Largest Dynamic</div>
                     <div class="colorblue">Creative Library</div>
                     <div class="visit_btn">
-                        <img src="/Icons/visitbutton.png">
+                      <a href="https://publisherplex.io/selfserve/login.php" target="_blank"><img src="https://s.hcurvecdn.com/selfserve/icons/visitbutton.png"></a>
                     </div>
                 </div>
                 <div class="img_vid_content" id="vidcontent">
-                    <img src="/Icons/tab.png">
-                    <img src="/Icons/playbtn.png" class="play_abs" id="onplay">
+                    <img src="https://s.hcurvecdn.com/selfserve/icons/tab.png">
+                    <img src="https://s.hcurvecdn.com/selfserve/icons/playbtn.png" class="play_abs" id="onplay">
                 </div>
             </div>
             <div class="ab_us flx_col" id="about_us">
@@ -84,114 +89,114 @@
                     Hockeycurve's Revolutionary Predictive Communication Engine uses Big Data & Artificial Intelligence to profile & identify high intent consumers & delivers dynamically created bespoke experiences to each one of them across devices.
                 </div>
                 <div class="lets_btn">
-                    <img src="/Icons/letcreateanad.png">
+                  <a href="https://publisherplex.io/selfserve/login.php" target="_blank"><img src="https://s.hcurvecdn.com/selfserve/icons/letcreateanad.png"></a>
                 </div>
             </div>
         </section>
         <section class="swipe_card_container">
-            <div id="usp_head_container">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="first_box">
-                      <p>Enterprise <br> Marketing <br> Automation</p>
-                    </div>
+          <div id="usp_head_container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="first_box">
+                    <p>Enterprise <br> Marketing <br> Automation</p>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <div class="partol">
-                        <div class="extra_div">
-                          <h2 class="head_in">DYNAMIC AD SERVING</h2>
-                        </div>
-                        <img class="call_me_gif" src="/Icons/dynadserve.gif" alt="">
-                        <div class="paramount">
-                          <p class="para_in">Brands use this to create & show data based relevant ads to
-                            users in real
-                            time improve marketing ROI.</p>
-                        </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="partol">
+                      <div class="extra_div">
+                        <h2 class="head_in">DYNAMIC AD SERVING</h2>
                       </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <div class="partol">
-                        <div class="extra_div">
-                          <h2 class="head_in">RECOMMENDATION ENGINE</h2>
-                        </div>
-                        <img class="call_me_gif" src="/Icons/recomengine.gif" alt="">
-                        <div class="paramount">
-                          <p class="para_in">Generate User product feed based on his online and offline
-                            activity</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <div class="partol">
-                        <div class="extra_div">
-                          <h2 class="head_in">DYNAMIC CREATIVES</h2>
-                        </div>
-                        <img class="call_me_gif" src="./Icons/dyncreative.gif" alt="">
-                        <div class="paramount">
-                          <p class="para_in">Every user is unique, hence every ad for every users should
-                            be unique.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <div class="partol">
-                        <div class="extra_div">
-                          <h2 class="head_in">PROGRAMATIC MEDIA BUYING</h2>
-                        </div>
-                        <img class="call_me_gif" src="./Icons/progmbuying.gif" alt="">
-                        <div class="paramount">
-                          <p class="para_in">Media Buying Automation for Bringing Speed, Scale & Driving
-                            Performance</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <div class="partol">
-                        <div class="extra_div">
-                          <h2 class="head_in">ENTERPRISE ANALYTICS</h2>
-                        </div>
-                        <img class="call_me_gif" src="./Icons/entpanlysis.gif" alt="">
-                        <div class="paramount">
-                          <p class="para_in">We provide real time campaign performance dashboards, a/b
-                            testing
-                            environments.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-box">
-                      <div class="partol">
-                        <div class="extra_div">
-                          <h2 class="head_in">CONSULTING</h2>
-                        </div>
-                        <img class="call_me_gif" src="./Icons/consulting.gif" alt="">
-                        <div class="paramount">
-                          <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
-                            Setup.</p>
-      
-                        </div>
-      
+                      <img class="call_me_gif" src="https://s.hcurvecdn.com/selfserve/icons/dynadserve.gif" alt="">
+                      <div class="paramount">
+                        <p class="para_in">Brands use this to create & show data based relevant ads to
+                          users in real
+                          time improve marketing ROI.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-left-btn"><img style="position: absolute;top: 200px;left: 0px;height: 40px;z-index: 99;" src="/Icons/leftarrow.png" alt=""></div>
-                <div class="swiper-right-btn"><img style="position: absolute;top: 200px;right: 0px;height: 40px;z-index: 99;" src="/Icons/rightarrow.png" alt=""></div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="partol">
+                      <div class="extra_div">
+                        <h2 class="head_in">RECOMMENDATION ENGINE</h2>
+                      </div>
+                      <img class="call_me_gif" src="https://s.hcurvecdn.com/selfserve/icons/recomengine.gif" alt="">
+                      <div class="paramount">
+                        <p class="para_in">Generate User product feed based on his online and offline
+                          activity</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="partol">
+                      <div class="extra_div">
+                        <h2 class="head_in">DYNAMIC CREATIVES</h2>
+                      </div>
+                      <img class="call_me_gif" src="https://s.hcurvecdn.com/selfserve/icons/dyncreative.gif" alt="">
+                      <div class="paramount">
+                        <p class="para_in">Every user is unique, hence every ad for every users should
+                          be unique.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="partol">
+                      <div class="extra_div">
+                        <h2 class="head_in">PROGRAMATIC MEDIA BUYING</h2>
+                      </div>
+                      <img class="call_me_gif" src="https://s.hcurvecdn.com/selfserve/icons/progmbuying.gif" alt="">
+                      <div class="paramount">
+                        <p class="para_in">Media Buying Automation for Bringing Speed, Scale & Driving
+                          Performance</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="partol">
+                      <div class="extra_div">
+                        <h2 class="head_in">ENTERPRISE ANALYTICS</h2>
+                      </div>
+                      <img class="call_me_gif" src="https://s.hcurvecdn.com/selfserve/icons/entpanlysis.gif" alt="">
+                      <div class="paramount">
+                        <p class="para_in">We provide real time campaign performance dashboards, a/b
+                          testing
+                          environments.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-box">
+                    <div class="partol">
+                      <div class="extra_div">
+                        <h2 class="head_in">CONSULTING</h2>
+                      </div>
+                      <img class="call_me_gif" src="https://s.hcurvecdn.com/selfserve/icons/consulting.gif" alt="">
+                      <div class="paramount">
+                        <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
+                          Setup.</p>
+      
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- Add Pagination -->
+              <div class="swiper-right-btn"><img style="position: absolute;top: 200px;left: 0px;height: 40px;z-index: 99;cursor: pointer;" src="https://s.hcurvecdn.com/selfserve/icons/leftarrow.png" alt=""></div>
+              <div class="swiper-left-btn"><img style="position: absolute;top: 200px;right: 0px;height: 40px;z-index: 99;cursor: pointer;" src="https://s.hcurvecdn.com/selfserve/icons/rightarrow.png" alt=""></div>
             </div>
-          </section>
+          </div>
+        </section>
         <section class="dco_container flx_col colorblack">
             <div class="what_is_dco_content">
                 <div class="para_gif_content flx_row">
@@ -204,39 +209,39 @@
                             <span class="colorblue">Variables : </span> Time, Device, Weather, Ad placement / contextual targeting, Location, bhavioral targeting, demographics, Retargeting Information.
                         </div>
                         <div class="create_btn">
-                            <img src="/Icons/createownbtn.png">
+                          <a href="https://publisherplex.io/selfserve/login.php" target="_blank"><img src="https://s.hcurvecdn.com/selfserve/icons/createownbtn.png"></a>
                         </div>
                     </div>
                     <div class="wh_dco_gif">
-                        <img src="/Icons/dco1.gif" id="change">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/halflaptop.gif" id="change">
                     </div>
                 </div>
             </div>
             <div class="why_dco_content">
                 <div class="para_gif_content2 flx_row">
                     <div class="why_dco_gif">
-                        <img src="/Icons/dco2.gif">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/dco2.gif">
                     </div>
                     <div class="why_dco flx_col">
                         <div class="s_head">Why <span class="colorblue">DCO?</span></div>
                         <div class="type flx_row">
                             <div class="banner" id="banner">Banner Blindness does not stand a chance</div>
-                            <div><img src="/Icons/bulletpoints.png"></div>
+                            <div><img src="https://s.hcurvecdn.com/selfserve/icons/bulletpoints.webp"></div>
                         </div>
                         <div class="type flx_row">
                             Personalized and customized<br>communication for all
-                            <div><img src="/Icons/bulletpoints.png"></div>
+                            <div><img src="https://s.hcurvecdn.com/selfserve/icons/bulletpoints.webp"></div>
                         </div>
                         <div class="type flx_row">
                             Persuasive power & the ability to convince<br>the user to transact
-                            <div><img src="/Icons/bulletpoints.png"></div>
+                            <div><img src="https://s.hcurvecdn.com/selfserve/icons/bulletpoints.webp"></div>
                         </div>
                         <div class="type flx_row">
                             Increases relevance and relatability
-                            <div><img src="/Icons/bulletpoints.png"></div>
+                            <div><img src="https://s.hcurvecdn.com/selfserve/icons/bulletpoints.webp"></div>
                         </div>
                         <div class="sales_btn">
-                            <img src="/Icons/contactsalesbtn.png">
+                          <a href="#contact"><img src="https://s.hcurvecdn.com/selfserve/icons/contactsalesbtn.png"></a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +251,7 @@
             <div class="blue_bg">
                 <div class="inner_piece">
                     <div class="achive_head">
-                        <h2>OUR ACHIEVEMENTS</h2>
+                        <h2 data-aos="zoom-in" data-aos-once="true">OUR ACHIEVEMENTS</h2>
                     </div>
                     <div style="display: flex;align-items: center;justify-content: center;flex-direction: row;">
                         <div class="comman_class" style="margin-right: 35px;">
@@ -254,9 +259,9 @@
                                 <div class="counter-value number_count" data-count="80">0 </div>
                             </div>
                             <div>
-                                <p class="plus" style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';    font-size: 45px;">
+                                <p data-aos="zoom-in" data-aos-once="true" class="plus" style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';    font-size: 45px;">
                                     +</p>
-                                <p class="cl" style="position: relative;top: -10px;">CLIENTS</p>
+                                <p class="cl" style="position: relative;top: -10px;" data-aos="zoom-in" data-aos-once="true">CLIENTS</p>
                             </div>
                         </div>
                         <div class="comman_class">
@@ -264,15 +269,15 @@
                                 <div class="counter-value number_count" data-count="100">0 </div>
                             </div>
                             <div>
-                                <p class="plus" style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';font-size: 45px;">
+                                <p class="plus" style="position: relative;top: 5px;font-family: 'Montserrat-extraBold';font-size: 45px;" data-aos="zoom-in" data-aos-once="true">
                                     +</p>
-                                <p class="cl" style="position: relative;top: -10px;">PROJECTS</p>
+                                <p class="cl" style="position: relative;top: -10px;" ata-aos="zoom-in" data-aos-once="true">PROJECTS</p>
                             </div>
                         </div>
                     </div>
                     <div class="box-items">
                         <div class="inner-box">
-                            <img src="./Icons/ctrincrease.gif" class="img_inner_box" alt="">
+                            <img src="https://s.hcurvecdn.com/selfserve/icons/ctrincrease.gif" class="img_inner_box" alt="">
                             <div class="ctr_rating forall">
                                 <div id="counter">
                                     <div style="margin: 10px 0px;"><span class="counter-value pic_count"
@@ -283,7 +288,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-box"><img src="./Icons/3xperform.gif" class="img_inner_box" alt="">
+                        <div class="inner-box"><img src="https://s.hcurvecdn.com/selfserve/icons/3xperform.gif" class="img_inner_box" alt="">
                             <div class="perform_roi forall">
                                 <div id="counter">
                                     <div style="margin: 10px 0px;"><span class="counter-value pic_count"
@@ -294,7 +299,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-box"><img src="./Icons/saleslift.gif" class="img_inner_box" alt="">
+                        <div class="inner-box"><img src="https://s.hcurvecdn.com/selfserve/icons/saleslift.gif" class="img_inner_box" alt="">
                             <div class="user_tracked forall">
                                 <div id="counter">
                                     <div style="margin: 10px 0px;"><span class="counter-value pic_count"
@@ -305,7 +310,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-box"><img src="./Icons/usertrack.gif" class="img_inner_box" alt="">
+                        <div class="inner-box"><img src="https://s.hcurvecdn.com/selfserve/icons/usertrack.gif" class="img_inner_box" alt="">
                             <div class="sale_lift forall">
                                 <div id="counter">
                                     <div style="margin: 10px 0px;"><span class="pic_count">+</span> <span
@@ -332,205 +337,165 @@
                 <div class="marquee-box">
                   <div class="marquee">
                     <figure>
-                      <img src="/Icons/logo1.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo1.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo2.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo2.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo3.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo3.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo4.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo4.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo5.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo5.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo6.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo6.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo7.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo7.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo8.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo8.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo9.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo9.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo10.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo10.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo11.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo11.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo12.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo12.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo1.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo1.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo2.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo2.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo3.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo3.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo4.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo4.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo5.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo5.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo6.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo6.png" alt="featured creator">
                     </figure>
                   </div>
                   <div class="marquee">
                     <figure>
-                      <img src="./Icons/logo7.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo7.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo8.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo8.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo9.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo9.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo10.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo10.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo11.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo11.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo12.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo12.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo1.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo1.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo2.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo2.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo3.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo3.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo4.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo4.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo5.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo5.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo6.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo6.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo7.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo7.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo8.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo8.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo9.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo9.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo10.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo10.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo11.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo11.png" alt="featured creator">
                     </figure>
                     <figure>
-                      <img src="./Icons/logo12.png" alt="featured creator">
+                      <img src="https://s.hcurvecdn.com/selfserve/icons/logo12.png" alt="featured creator">
                     </figure>
                   </div>
                 </div>
               </div>
-
-
-            <!-- <div class="omkswipe">
-                <div class="omkswipe-track">
-                    <div class="track">
-                        <img src="./Icons/logo1.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo2.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo3.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo4.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo5.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo6.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo7.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo8.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo9.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo10.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo11.png" height="100" width="120" alt="" />
-                    </div>
-                    <div class="track">
-                        <img src="./Icons/logo12.png" height="100" width="120" alt="" />
-                    </div>
-                </div>
-            </div> -->
         </section>
         <section id="selfserve">
             <div class="self-container">
                 <div class="abs_self" data-aos="zoom-in-up" data-aos-duration="200" data-aos-delay="200"
                 data-aos-easing="linear" data-aos-once="true">
-                    <img class="selfgif" src="/Icons/maincreativeself.gif">
+                    <img class="selfgif" src="https://s.hcurvecdn.com/selfserve/icons/maincreativeself.gif">
                 </div>
+                <div class="selfwrap">
                 <div class="self-title" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                     <h4>Create a Dynamic High Quality HTML ad in Few Minutes</h4>
                 </div>
                 <div class="steps">
                     <div class="step" data-aos="zoom-in" data-aos-once="true">
-                        <img src="/Icons/creative1.gif" alt="creative 1">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/creative1.gif" alt="creative 1">
                         <p class="step-text" class="step-text" data-aos="fade-down" data-aos-once="true">Start creating customizable online ads with our advertisements maker</p>
                     </div>
                     <div class="step" data-aos="zoom-in" data-aos-once="true">
-                        <img src="/Icons/creative2.gif" alt="creative 1">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/creative2.gif" alt="creative 1">
                         <p class="step-text" class="step-text" data-aos="fade-down" data-aos-once="true">Create a Dynamic ad with various categories of Ad Format types</p>
                     </div>
                     <div class="step" data-aos="zoom-in" data-aos-once="true">
-                        <img src="/Icons/creative3.gif" alt="creative 1">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/creative3.gif" alt="creative 1">
                         <p class="step-text" class="step-text" data-aos="fade-down" data-aos-once="true">Ideal for Marketers, Small business owners and creative agencies</p>
                     </div>
                 </div>
                 <div class="cta" id="ctaforanim">
-                    <div class="cta-btn" data-aos="zoom-in" data-aos-once="true">
+                  <a href="https://publisherplex.io/selfserve/login.php" target="_blank"><div class="cta-btn" data-aos="zoom-in" data-aos-once="true">
                         <h3 class="cta-text" data-aos="fade-down" data-aos-delay="300" data-aos-once="true">Let's Create Ad</h3>
-                    </div>
+                    </div></a>
                 </div>
                 <div class="icons">
-                    <div class="icon icon1" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
-                        <img src="/Icons/icon1.png" alt="icon1">
+                    <div class="icon icon1">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/icon1.png" alt="icon1">
                     </div>
-                    <div class="icon icon2" data-aos="fade-up" data-aos-delay="700" data-aos-once="true">
-                        <img src="/Icons/icon2.png" alt="icon2">
+                    <div class="icon icon2" data-aos="fade-up-right" data-aos-delay="700" data-aos-once="true">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/icon2.png" alt="icon2">
                     </div>
-                    <div class="icon icon3" data-aos="fade-up" data-aos-delay="900" data-aos-once="true">
-                        <img src="/Icons/icon3.png" alt="icon3">
+                    <div class="icon icon3">
+                        <img src="https://s.hcurvecdn.com/selfserve/icons/icon3.png" alt="icon3">
                     </div>
                 </div>
+              </div>
             </div>
         </section>
         <!-- <section id="test-mony"> -->
-            <!-- <h2 class="head_testm">TESTIMONIALS</h2> -->
-            <div id="carousel3d">
+            <h2 class="head_testm">TESTIMONIALS</h2>
+            <!-- <div id="carousel3d">
                 <carousel-3d :perspective="10" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="false" :autoplay-timeout="1000">
                   <slide :index="0">
                     <div class="testimonials">
@@ -659,15 +624,165 @@
                     </div>
                   </slide>
                 </carousel-3d>
-              </div>
+              </div> -->
         <!-- </section>     -->
             
+        <div id="carousel3d">
+          <carousel-3d :perspective="10" :space="200" :display="5" :controls-visible="true"
+              :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30"
+              :controls-height="60" :clickable="true" :autoplay="false" :autoplay-timeout="1000">
+              <slide :index="0">
+                  <div class="testimonials">
+                      <div class="top_info">
+                          <div class="sub_info" style="margin: 3px 12px;">
+                              <img class="face_img" src="https://s.hcurvecdn.com/selfserve/icons/face.png" alt="">
+                          </div>
+                          <div>
+                              <p class="test_name">John Dev</p>
+                              <img class="test_img" src="https://s.hcurvecdn.com/selfserve/icons/3-Star.png" alt="">
+                          </div>
+                      </div>
+                      <div>
+                          <p class="para_on_para">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem
+                              aliquid,
+                              tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus
+                              sit
+                              quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing
+                              elit.
+                              Hic nesciunt vero minima vel laudantium.
+                          </p>
+                      </div>
+                  </div>
+              </slide>
+              <slide :index="1">
+                  <div class="testimonials">
+                      <div class="top_info">
+                          <div class="sub_info" style="margin: 3px 12px;">
+                              <img class="face_img" src="https://s.hcurvecdn.com/selfserve/icons/face.png" alt="">
+                          </div>
+                          <div>
+                              <p class="test_name">John Dev</p>
+                              <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                          </div>
+                      </div>
+                      <div>
+                          <p class="para_on_para">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem
+                              aliquid,
+                              tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus
+                              sit
+                              quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing
+                              elit.
+                              Hic nesciunt vero minima vel laudantium.
+                          </p>
+                      </div>
+                  </div>
+              </slide>
+              <slide :index="2">
+                  <div class="testimonials">
+                      <div class="top_info">
+                          <div class="sub_info" style="margin: 3px 12px;">
+                              <img class="face_img" src="https://s.hcurvecdn.com/selfserve/icons/face.png" alt="">
+                          </div>
+                          <div>
+                              <p class="test_name">John Dev</p>
+                              <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                          </div>
+                      </div>
+                      <div>
+                          <p class="para_on_para">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem
+                              aliquid,
+                              tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus
+                              sit
+                              quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing
+                              elit.
+                              Hic nesciunt vero minima vel laudantium.
+                          </p>
+                      </div>
+                  </div>
+              </slide>
+              <slide :index="3">
+                  <div class="testimonials">
+                      <div class="top_info">
+                          <div class="sub_info" style="margin: 3px 12px;">
+                              <img class="face_img" src="https://s.hcurvecdn.com/selfserve/icons/face.png" alt="">
+                          </div>
+                          <div>
+                              <p class="test_name">John Dev</p>
+                              <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                          </div>
+                      </div>
+                      <div>
+                          <p class="para_on_para">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem
+                              aliquid,
+                              tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus
+                              sit
+                              quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing
+                              elit.
+                              Hic nesciunt vero minima vel laudantium.
+                          </p>
+                      </div>
+                  </div>
+              </slide>
+              <slide :index="4">
+                  <div class="testimonials">
+                      <div class="top_info">
+                          <div class="sub_info" style="margin: 3px 12px;">
+                              <img class="face_img" src="https://s.hcurvecdn.com/selfserve/icons/face.png" alt="">
+                          </div>
+                          <div>
+                              <p class="test_name">John Dev</p>
+                              <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                          </div>
+                      </div>
+                      <div>
+                          <p class="para_on_para">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem
+                              aliquid,
+                              tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus
+                              sit
+                              quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing
+                              elit.
+                              Hic nesciunt vero minima vel laudantium.
+                          </p>
+                      </div>
+                  </div>
+              </slide>
+              <slide :index="5">
+                  <div class="testimonials">
+                      <div class="top_info">
+                          <div class="sub_info" style="margin: 3px 12px;">
+                              <img class="face_img" src="https://s.hcurvecdn.com/selfserve/icons/face.png" alt="">
+                          </div>
+                          <div>
+                              <p class="test_name">John Dev</p>
+                              <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
+                          </div>
+                      </div>
+                      <div>
+                          <p class="para_on_para">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem
+                              aliquid,
+                              tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus
+                              sit
+                              quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing
+                              elit.
+                              Hic nesciunt vero minima vel laudantium.
+                          </p>
+                      </div>
+                  </div>
+              </slide>
+          </carousel-3d>
+      </div>
       
         <footer id="footer">
-            <div class="nav-menu flx_row">
+            <div class="nav-menu flx_row" style="text-transform: uppercase;">
                 <div><a href="#home">HOME</a></div>
-                <div><a href="#about">ABOUT US</a></div>
-                <div><a href="#library">LIBRARY</a></div>
+                <div><a href="#about_us">ABOUT US</a></div>
+                <div><a href="#achive_container">achivements</a></div>
                 <div><a href="#selfserve">SELF SERVE TOOL</a></div>
                 <div><a href="#contact">CONTACT US</a></div>
             </div>
@@ -677,9 +792,9 @@
                 <input type="text" name="agency-name" placeholder="Agency Name">
                 <input type="email" name="email" placeholder="Email ID">
                 <input type="number" name="number" placeholder="Phone Number">
-                <a href="#"><img src="/Icons/footercta.png" alt="Contact btn"></a>
+                <img src="https://s.hcurvecdn.com/selfserve/icons/footercta.png" alt="Contact btn">
             </form>
-            <p class="foot-text">&copy; HOCKEYCURVE GROWTH SOLUTIONS PVT LTD 2023</p>
+            <p class="foot-text">&copy; HOCKEYCURVE GROWTH SOLUTIONS PVT LTD <span id="year"></span></p>
         </footer>
 
 

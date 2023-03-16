@@ -30,45 +30,59 @@ window.onclick = function(event) {
   }
 }
 
-
-// swiper js
-
+//swiper first
 var swiper = new Swiper(".swiper-container", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    breakpoints: {
-      350: {
-        slidesPerView: 1,
-        spaceBetween: 50
-      },
-      480: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      580: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 30
-      },
-      900: {
-        slidesPerView: 3,
-        spaceBetween: 15
-      }
+  slidesPerView: 1,
+  initialSlide: 0,
+  spaceBetween: 10,
+  loop: true,
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+      spaceBetween: 50
     },
-    // Optional parameters
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20
     },
-    navigation: {
-      nextEl: ".swiper-left-btn",
-      prevEl: ".swiper-right-btn"
+    580: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    646: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 5
+      // width: 1000,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20
+      // width: 1000,
+    },
+    2000: {
+      slidesPerView: 5,
+      spaceBetween: 20
     }
-  });
+  },
+  // Optional parameters
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".swiper-left-btn",
+    prevEl: ".swiper-right-btn"
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+    reverseDirection: false
+  }
+});
 
 
 // count ++
@@ -130,16 +144,61 @@ $(window).scroll(function () {
 // });
 
 //carousel last
+
 new Vue({
-    el: '#carousel3d',
-    data: {
+  el: '#carousel3d',
+  data: {
       slides: 7
-    },
-    components: {
+  },
+  dots: false,
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  autoplay: true,
+  autoplaySpeed: 2000,
+
+  pauseOnHover: true,
+
+  responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 5,
+              slidesToScroll: 5,
+          }
+      },
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+          }
+      },
+      {
+          breakpoint: 480,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+          }
+      }
+
+  ],
+  components: {
       'carousel-3d': window['carousel-3d'].Carousel3d,
       'slide': window['carousel-3d'].Slide
-    }
-  })
+  }
+});
+
+// new Vue({
+//     el: '#carousel3d',
+//     data: {
+//       slides: 7
+//     },
+//     components: {
+//       'carousel-3d': window['carousel-3d'].Carousel3d,
+//       'slide': window['carousel-3d'].Slide
+//     }
+//   })
 
   //start added by Chase
 //   var a = document.getElementsByTagName("a");
@@ -251,11 +310,12 @@ new Vue({
 
 
 // animations
-function vidBounce() {var tll =new TimelineMax({repeat:0,repeatDelay:0,delay:0});
-tll.fromTo("#vidcontent",0.3,{x:30,scale:0.7,ease:Power0.easeBounce},{x:0,scale:1,ease:Power0.easeBounce});
-tll.to("#vidcontent",0.3,{x:30,scale:0.7,ease:Power0.easeBounce},);
-tll.to("#vidcontent",0.4,{x:0,scale:1,ease:Power0.easeBounce});
-}vidBounce();
+function vidBounce() {
+  var tll = new TimelineMax({ repeat: 0, repeatDelay: 0, delay: 0 });
+  tll.fromTo("#vidcontent", 0.5, { x: 300, scale: 0, ease: Power0.easePower0 }, { x: 0, scale: 1, ease: Power0.easePower0 });
+  tll.to("#vidcontent", 0.2, { x: 100, scale: 0.65, ease: Power0.easePower0 });
+  tll.to("#vidcontent", 0.3, { x: 0, scale: 1, ease: Power0.easePower0 });
+} vidBounce();
 
 
 // gsap.from(".cta-text", {
@@ -295,6 +355,9 @@ tll.to("#vidcontent",0.4,{x:0,scale:1,ease:Power0.easeBounce});
 // gsap.from(".icon1", {
 //     scale: 0,
 //     // stagger: 0.05,
+//     repeat: -1,
+//     repeatDelay: 1,
+//     duration: 0.8,
 //     duration: 1,
 //     ease: "elastic"
 // });
@@ -308,25 +371,35 @@ tll.to("#vidcontent",0.4,{x:0,scale:1,ease:Power0.easeBounce});
 //     ease: "power0"
 // });
 
-// gsap.from(".icon3", {
-//     scale: 0,
-//     // stagger: 0.05,
-//     ease: "bounce"
-// });
-// }Annim();
+gsap.from(".icon1,.icon3", {
+    scale: 0,
+    repeat: -1,
+    repeatDelay: 1,
+    duration: 0.8,
+    ease: "bounce"
+});
+
+
+
+//show year
+var year = new Date();
+var current = year.getFullYear();
+document.getElementById("year").innerHTML = current;
+
 
 // image change on media query
 var chng = document.getElementById("change");
 function chngImage(imgchange){
     if(imgchange.matches){
-        chng.src = "/Icons/laptopmob.gif";
+        chng.src = "https://s.hcurvecdn.com/selfserve/icons/fulllaptop.gif";
     }else{
-        chng.src = "/Icons/dco1.gif";
+        chng.src = "https://s.hcurvecdn.com/selfserve/icons/halflaptop.gif";
     }
 }
 var imgchange = window.matchMedia("(max-width: 750px)");
 chngImage(imgchange);
 imgchange.addEventListener(chngImage);
+
 
 
 
