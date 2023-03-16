@@ -12,6 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
     <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 </head>
 <body class="mp0">
@@ -83,88 +88,110 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="swipe_card_container">
+        <section class="swipe_card_container">
             <div id="usp_head_container">
-                <div class="container">
-                    <div class="swiper slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide-major">
-                                <div class="first_box">
-                                    <p>Enterprise Marketing Automation</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide again">
-                                <div class="img-box">
-                                    <div class="partol">
-                                        <h2 class="head_in">DYNAMIC AD SERVING</h2>
-                                        <img class="call_me_gif" src="/Icons/dynadserve.gif" alt="">
-                                        <p class="para_in">Brands use this to create & show data based relevant ads to
-                                            users in real
-                                            time improve marketing ROI.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <div class="partol">
-                                        <h2 class="head_in">RECOMMENDATION ENGINE</h2>
-                                        <img class="call_me_gif" src="/Icons/recomengine.gif" alt="">
-                                        <p class="para_in">Generate User product feed based on his online and offline
-                                            activity</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <div class="partol">
-                                        <h2 class="head_in">DYNAMIC CREATIVES</h2>
-                                        <img class="call_me_gif" src="/Icons/dyncreative.gif" alt="">
-                                        <p class="para_in">Every user is unique, hence every ad for every users should
-                                            be unique.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <div class="partol">
-                                        <h2 class="head_in">PROGRAMATIC MEDIA BUYING</h2>
-                                        <img class="call_me_gif" src="/Icons/progmbuying.gif" alt="">
-                                        <p class="para_in">Media Buying Automation for Bringing Speed, Scale & Driving
-                                            Performance</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <div class="partol">
-                                        <h2 class="head_in">ENTERPRISE ANALYTICS</h2>
-                                        <img class="call_me_gif" src="/Icons/entpanlysis.gif" alt="">
-                                        <p class="para_in">We provide real time campaign performance dashboards, a/b
-                                            testing
-                                            environments.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="img-box">
-                                    <div class="partol">
-                                        <h2 class="head_in">CONSULTING</h2>
-                                        <img class="call_me_gif" src="/Icons/consulting.gif" alt="">
-                                        <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
-                                            Setup.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="first_box">
+                      <p>Enterprise <br> Marketing <br> Automation</p>
                     </div>
-                    <div class="swiper-left-btn"><img style="position: absolute;top: 250px;left: 0px;height: 40px;"
-                            src="/Icons/leftarrow.png" alt=""></div>
-                    <div class="swiper-right-btn"><img style="position: absolute;top: 250px;right: 0px;height: 40px;"
-                            src="/Icons/rightarrow.png" alt=""></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <div class="partol">
+                        <div class="extra_div">
+                          <h2 class="head_in">DYNAMIC AD SERVING</h2>
+                        </div>
+                        <img class="call_me_gif" src="/Icons/dynadserve.gif" alt="">
+                        <div class="paramount">
+                          <p class="para_in">Brands use this to create & show data based relevant ads to
+                            users in real
+                            time improve marketing ROI.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <div class="partol">
+                        <div class="extra_div">
+                          <h2 class="head_in">RECOMMENDATION ENGINE</h2>
+                        </div>
+                        <img class="call_me_gif" src="/Icons/recomengine.gif" alt="">
+                        <div class="paramount">
+                          <p class="para_in">Generate User product feed based on his online and offline
+                            activity</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <div class="partol">
+                        <div class="extra_div">
+                          <h2 class="head_in">DYNAMIC CREATIVES</h2>
+                        </div>
+                        <img class="call_me_gif" src="./Icons/dyncreative.gif" alt="">
+                        <div class="paramount">
+                          <p class="para_in">Every user is unique, hence every ad for every users should
+                            be unique.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <div class="partol">
+                        <div class="extra_div">
+                          <h2 class="head_in">PROGRAMATIC MEDIA BUYING</h2>
+                        </div>
+                        <img class="call_me_gif" src="./Icons/progmbuying.gif" alt="">
+                        <div class="paramount">
+                          <p class="para_in">Media Buying Automation for Bringing Speed, Scale & Driving
+                            Performance</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <div class="partol">
+                        <div class="extra_div">
+                          <h2 class="head_in">ENTERPRISE ANALYTICS</h2>
+                        </div>
+                        <img class="call_me_gif" src="./Icons/entpanlysis.gif" alt="">
+                        <div class="paramount">
+                          <p class="para_in">We provide real time campaign performance dashboards, a/b
+                            testing
+                            environments.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-box">
+                      <div class="partol">
+                        <div class="extra_div">
+                          <h2 class="head_in">CONSULTING</h2>
+                        </div>
+                        <img class="call_me_gif" src="./Icons/consulting.gif" alt="">
+                        <div class="paramount">
+                          <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
+                            Setup.</p>
+      
+                        </div>
+      
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-left-btn"><img style="position: absolute;top: 200px;left: 0px;height: 40px;z-index: 99;" src="/Icons/leftarrow.png" alt=""></div>
+                <div class="swiper-right-btn"><img style="position: absolute;top: 200px;right: 0px;height: 40px;z-index: 99;" src="/Icons/rightarrow.png" alt=""></div>
+              </div>
             </div>
-        </section> -->
+          </section>
         <section class="dco_container flx_col colorblack">
             <div class="what_is_dco_content">
                 <div class="para_gif_content flx_row">
@@ -462,272 +489,180 @@
         </section>
         <section id="selfserve">
             <div class="self-container">
-                <div class="abs_self">
-                    <img src="/Icons/maincreativeself.gif">
+                <div class="abs_self" data-aos="zoom-in-up" data-aos-duration="200" data-aos-delay="200"
+                data-aos-easing="linear" data-aos-once="true">
+                    <img class="selfgif" src="/Icons/maincreativeself.gif">
                 </div>
-                <div class="self-title">
+                <div class="self-title" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                     <h4>Create a Dynamic High Quality HTML ad in Few Minutes</h4>
                 </div>
                 <div class="steps">
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-once="true">
                         <img src="/Icons/creative1.gif" alt="creative 1">
-                        <p class="step-text">Start creating customizable online ads with our advertisements maker</p>
+                        <p class="step-text" class="step-text" data-aos="fade-down" data-aos-once="true">Start creating customizable online ads with our advertisements maker</p>
                     </div>
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-once="true">
                         <img src="/Icons/creative2.gif" alt="creative 1">
-                        <p class="step-text">Create a Dynamic ad with various categories of Ad Format types</p>
+                        <p class="step-text" class="step-text" data-aos="fade-down" data-aos-once="true">Create a Dynamic ad with various categories of Ad Format types</p>
                     </div>
-                    <div class="step">
+                    <div class="step" data-aos="zoom-in" data-aos-once="true">
                         <img src="/Icons/creative3.gif" alt="creative 1">
-                        <p class="step-text">Ideal for Marketers, Small business owners and creative agencies</p>
+                        <p class="step-text" class="step-text" data-aos="fade-down" data-aos-once="true">Ideal for Marketers, Small business owners and creative agencies</p>
                     </div>
                 </div>
-                <div class="cta">
-                    <div class="cta-btn">
-                        <h3 class="cta-text">Let's Create Ad</h3>
+                <div class="cta" id="ctaforanim">
+                    <div class="cta-btn" data-aos="zoom-in" data-aos-once="true">
+                        <h3 class="cta-text" data-aos="fade-down" data-aos-delay="300" data-aos-once="true">Let's Create Ad</h3>
                     </div>
                 </div>
-                <!-- <div class="icons">
-                    <div class="icon">
+                <div class="icons">
+                    <div class="icon icon1" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
                         <img src="/Icons/icon1.png" alt="icon1">
                     </div>
-                    <div class="icon">
+                    <div class="icon icon2" data-aos="fade-up" data-aos-delay="700" data-aos-once="true">
                         <img src="/Icons/icon2.png" alt="icon2">
                     </div>
-                    <div class="icon">
+                    <div class="icon icon3" data-aos="fade-up" data-aos-delay="900" data-aos-once="true">
                         <img src="/Icons/icon3.png" alt="icon3">
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
-        <!-- <section id="test-mony">
-            <h2 class="head_testm">TESTIMONIALS</h2>
-            <div class="swiper test_mony_Swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonials">
-                            <div class="top_info">
-                                <div class="sub_info" style="margin: 3px 12px;">
-                                    <img height="55px" src="./Icons/face.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="test_name">John Dev</p>
-                                    <img class="test_img" src="Icons/3-Start.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Hic nesciunt vero minima vel laudantium.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonials">
-                            <div class="top_info">
-                                <div class="sub_info" style="margin: 3px 12px;">
-                                    <img height="55px" src="./Icons/face.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="test_name">John Dev</p>
-                                    <img class="test_img" src="/Icons/3-Start.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Hic nesciunt vero minima vel laudantium.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonials">
-                            <div class="top_info">
-                                <div class="sub_info" style="margin: 3px 12px;">
-                                    <img height="55px" src="./Icons/face.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="test_name">John Dev</p>
-                                    <img class="test_img" src="/Icons/5-Star.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Hic nesciunt vero minima vel laudantium.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonials">
-                            <div class="top_info">
-                                <div class="sub_info" style="margin: 3px 12px;">
-                                    <img height="55px" src="./Icons/face.png" alt="">
-                                </div>
-                                <div>
-                                    <p class="test_name">John Dev</p>
-                                    <img class="test_img" src="/Icons/4stars.png" alt="">
-                                </div>
-                            </div>
-                            <div>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                    tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                    quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Hic nesciunt vero minima vel laudantium.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-    
-        </section> -->
-        <!-- <div id="carousel3d">
-            <carousel-3d :perspective="10" :space="200" :display="5" :controls-visible="true"
-                :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60"
-                :clickable="true" :autoplay="false" :autoplay-timeout="4000">
-                <slide :index="0">
+        <!-- <section id="test-mony"> -->
+            <!-- <h2 class="head_testm">TESTIMONIALS</h2> -->
+            <div id="carousel3d">
+                <carousel-3d :perspective="10" :space="200" :display="5" :controls-visible="true" :controls-prev-html="'&#10092;'" :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true" :autoplay="false" :autoplay-timeout="1000">
+                  <slide :index="0">
                     <div class="testimonials">
-                        <div class="top_info">
-                            <div class="sub_info" style="margin: 3px 12px;">
-                                <img height="55px" src="./Icons/face.png" alt="">
-                            </div>
-                            <div>
-                                <p class="test_name">John Dev</p>
-                                <img class="test_img" src="/Icons/3-Start.png" alt="">
-                            </div>
+                      <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                          <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
-                            <p class="para_on_para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Hic nesciunt vero minima vel laudantium.
-                            </p>
+                          <p class="test_name">John Dev</p>
+                          <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
                         </div>
+                      </div>
+                      <div>
+                        <p class="para_on_para">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                          tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                          quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Hic nesciunt vero minima vel laudantium.
+                        </p>
+                      </div>
                     </div>
-                </slide>
-                <slide :index="1">
-    
+                  </slide>
+                  <slide :index="1">
                     <div class="testimonials">
-                        <div class="top_info">
-                            <div class="sub_info" style="margin: 3px 12px;">
-                                <img height="55px" src="./Icons/face.png" alt="">
-                            </div>
-                            <div>
-                                <p class="test_name">John Dev</p>
-                                <img class="test_img" src="/Icons/3-Start.png" alt="">
-                            </div>
+                      <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                          <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Hic nesciunt vero minima vel laudantium.
-                            </p>
+                          <p class="test_name">John Dev</p>
+                          <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
                         </div>
+                      </div>
+                      <div>
+                        <p class="para_on_para">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                          tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                          quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Hic nesciunt vero minima vel laudantium.
+                        </p>
+                      </div>
                     </div>
-                </slide>
-                <slide :index="2">
+                  </slide>
+                  <slide :index="2">
                     <div class="testimonials">
-                        <div class="top_info">
-                            <div class="sub_info" style="margin: 3px 12px;">
-                                <img height="55px" src="./Icons/face.png" alt="">
-                            </div>
-                            <div>
-                                <p class="test_name">John Dev</p>
-                                <img class="test_img" src="/Icons/3-Start.png" alt="">
-                            </div>
+                      <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                          <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Hic nesciunt vero minima vel laudantium.
-                            </p>
+                          <p class="test_name">John Dev</p>
+                          <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
                         </div>
+                      </div>
+                      <div>
+                        <p class="para_on_para">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                          tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                          quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Hic nesciunt vero minima vel laudantium.
+                        </p>
+                      </div>
                     </div>
-                </slide>
-                <slide :index="3">
+                  </slide>
+                  <slide :index="3">
                     <div class="testimonials">
-                        <div class="top_info">
-                            <div class="sub_info" style="margin: 3px 12px;">
-                                <img height="55px" src="/Icons/face.png" alt="">
-                            </div>
-                            <div>
-                                <p class="test_name">John Dev</p>
-                                <img class="test_img" src="/Icons/3-Start.png" alt="">
-                            </div>
+                      <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                          <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Hic nesciunt vero minima vel laudantium.
-                            </p>
+                          <p class="test_name">John Dev</p>
+                          <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
                         </div>
+                      </div>
+                      <div>
+                        <p class="para_on_para">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                          tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                          quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Hic nesciunt vero minima vel laudantium.
+                        </p>
+                      </div>
                     </div>
-                </slide>
-                <slide :index="4">
+                  </slide>
+                  <slide :index="4">
                     <div class="testimonials">
-                        <div class="top_info">
-                            <div class="sub_info" style="margin: 3px 12px;">
-                                <img height="55px" src="/Icons/face.png" alt="">
-                            </div>
-                            <div>
-                                <p class="test_name">John Dev</p>
-                                <img class="test_img" src="/Icons/3-Start.png" alt="">
-                            </div>
+                      <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                          <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Hic nesciunt vero minima vel laudantium.
-                            </p>
+                          <p class="test_name">John Dev</p>
+                          <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
                         </div>
+                      </div>
+                      <div>
+                        <p class="para_on_para">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                          tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                          quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Hic nesciunt vero minima vel laudantium.
+                        </p>
+                      </div>
                     </div>
-                </slide>
-                <slide :index="5">
+                  </slide>
+                  <slide :index="5">
                     <div class="testimonials">
-                        <div class="top_info">
-                            <div class="sub_info" style="margin: 3px 12px;">
-                                <img height="55px" src="/Icons/face.png" alt="">
-                            </div>
-                            <div>
-                                <p class="test_name">John Dev</p>
-                                <img class="test_img" src="/Icons/3-Start.png" alt="">
-                            </div>
+                      <div class="top_info">
+                        <div class="sub_info" style="margin: 3px 12px;">
+                          <img class="face_img" src="./Icons/face.png" alt="">
                         </div>
                         <div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
-                                tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
-                                quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Hic nesciunt vero minima vel laudantium.
-                            </p>
+                          <p class="test_name">John Dev</p>
+                          <img class="test_img" src="./Icons/Rating/3-Start.png" alt="">
                         </div>
+                      </div>
+                      <div>
+                        <p class="para_on_para">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ab autem aliquid,
+                          tempora earum quibusdam eius commodi? Enim voluptas atque pariatur corrupti possimus sit
+                          quae culpa eligendi quo ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                          Hic nesciunt vero minima vel laudantium.
+                        </p>
+                      </div>
                     </div>
-                </slide>
-    
-    
-            </carousel-3d>
-        </div> -->
+                  </slide>
+                </carousel-3d>
+              </div>
+        <!-- </section>     -->
+            
+      
         <footer id="footer">
             <div class="nav-menu flx_row">
                 <div><a href="#home">HOME</a></div>
@@ -750,5 +685,9 @@
 
     </div>
 <script src="/JavaScript/web_js.js"></script>    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
