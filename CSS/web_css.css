@@ -27,10 +27,14 @@ a {
     text-decoration: none;
 }
 
+.user_none {
+    user-select: none;
+}
+
 body {
     height: 100%;
     width: 100%;
-    background: url('/Icons/bg2.png') no-repeat;
+    background: url('https://s.hcurvecdn.com/selfserve/icons/bg2.png') no-repeat;
     background-size: cover;
     /* min-height: 100vh; */
 }
@@ -61,6 +65,7 @@ body::-webkit-scrollbar-thumb {
 .complete_container {
     height: inherit;
     width: inherit;
+    user-select: none;
 }
 
 .wh100 {
@@ -71,92 +76,92 @@ body::-webkit-scrollbar-thumb {
 /* font-family */
 @font-face {
     font-family: "Montserrat-Black";
-    src: url("/fonts/Montserrat-Black.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Black.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-BlackItalic";
-    src: url("/fonts/Montserrat-BlackItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-BlackItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Bold";
-    src: url("/fonts/Montserrat-Bold.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Bold.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-BoldItalic";
-    src: url("/fonts/Montserrat-BoldItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-BoldItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-ExtraBold";
-    src: url("/fonts/Montserrat-ExtraBold.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-ExtraBold.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-ExtraBoldItalic";
-    src: url("/fonts/Montserrat-ExtraBoldItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-ExtraBoldItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-ExtraLight";
-    src: url("/fonts/Montserrat-ExtraLight.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-ExtraLight.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-ExtraLightItalic";
-    src: url("/fonts/Montserrat-ExtraLightItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-ExtraLightItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Italic";
-    src: url("/fonts/Montserrat-Italic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Italic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Light";
-    src: url("/fonts/Montserrat-Light.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Light.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-LightItalic";
-    src: url("/fonts/Montserrat-LightItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-LightItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Medium";
-    src: url("/fonts/Montserrat-Medium.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Medium.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-MediumItalic";
-    src: url("/fonts/Montserrat-MediumItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-MediumItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url("/fonts/Montserrat-Regular.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Regular.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-SemiBold";
-    src: url("/fonts/Montserrat-SemiBold.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-SemiBold.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-SemiBoldItalic";
-    src: url("/fonts/Montserrat-SemiBoldItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-SemiBoldItalic.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-Thin";
-    src: url("/fonts/Montserrat-Thin.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-Thin.ttf?v=3")format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat-ThinItalic";
-    src: url("/fonts/Montserrat-ThinItalic.ttf");
+    src: url("https://s.hcurvecdn.com/selfserve/icons/Montserrat-ThinItalic.ttf?v=3")format("truetype");
 }
 
 /* navbar section */
@@ -193,7 +198,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn_copy_content {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 46px;
     font-family: "Montserrat-Bold";
     width: 70%;
     padding: 10px 20px;
@@ -236,11 +241,12 @@ body::-webkit-scrollbar-thumb {
 /* Modal Content */
 .modal-content {
     position: relative;
-    top: 13%;
+    top: 50%;
+    transform: translateY(-50%);
     margin: auto;
     padding: 0;
     width: 80%;
-    max-width: 700px;
+    max-width: 1000px;
 }
 
 /* Close Button */
@@ -279,13 +285,14 @@ body::-webkit-scrollbar-thumb {
 
 .visit_btn {
     margin: 15px 0px;
-    width: 210px;
+    width: 240px;
     cursor: pointer;
 }
 
 .visit_btn img {
     width: 100%;
     height: auto;
+    vertical-align: top;
 }
 
 .ab_us {
@@ -311,6 +318,10 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+.lets_btn a {
+    display: inline-block;
+}
+
 .dco_container {
     margin: 35px 0px;
 }
@@ -329,6 +340,10 @@ body::-webkit-scrollbar-thumb {
     width: 200px;
     height: 47px;
     cursor: pointer;
+}
+
+.create_btn a {
+    display: inline-block;
 }
 
 .f_head {
@@ -395,6 +410,10 @@ body::-webkit-scrollbar-thumb {
     margin: 60px 10px 10px 0px;
 }
 
+.sales_btn a {
+    display: inline-block;
+}
+
 .sales_btn img {
     width: 200px;
     height: 46px;
@@ -402,16 +421,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* swiper container */
-
 #usp_head_container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 430px;
-    overflow: hidden;
+    height: 435px;
     width: 100%;
-    background: url('/Icons/swipeblue.png') repeat;
+    background: url("https://s.hcurvecdn.com/selfserve/icons/swipeblue.png") repeat;
     /* background-size: cover; */
 }
 
@@ -429,6 +446,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-size: 18px;
     background: #fff;
+
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -445,6 +463,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .first_box {
+    cursor: grab;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -457,7 +476,7 @@ body::-webkit-scrollbar-thumb {
 
 .first_box p {
     font-family: "Montserrat-Bold";
-    font-size: 45px;
+    font-size: 44px;
     color: #f6f6f6;
 }
 
@@ -489,13 +508,18 @@ body::-webkit-scrollbar-thumb {
 
 .call_me_gif {
     height: 200px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
 .img-box {
-    max-width: 90%;
+    cursor: grab;
+    /* max-width: 90%; */
+    margin: 15px auto;
+    max-width: 285px;
+
     /* position: relative; */
     top: 50px;
-    height: 390px;
+    height: 355px;
     width: 500px;
     background: #f6f6f6;
     /* width: 99%; */
@@ -536,7 +560,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .swiper-container {
-    cursor: grab;
     user-select: none;
     position: initial !important;
 }
@@ -546,6 +569,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .paramount {
+    margin-top: 35px;
     height: 90px;
     display: flex;
     justify-content: center;
@@ -596,11 +620,39 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@media only screen and (max-width: 1125px) {
+    .first_box p {
+        font-size: 38px;
+    }
 
+    .para_in {
+        font-size: 15px;
+    }
 
+    .img-box {
+        max-width: 225px;
+    }
+}
 
+@media only screen and (max-width: 400px) {
+    .call_me_gif {
+        height: 160px;
+    }
+}
 
+@media only screen and (max-width: 660px) {
+    .first_box p {
+        font-size: 35px;
+    }
 
+    .call_me_gif {
+        height: 110px;
+    }
+
+    .head_in {
+        font-size: 17px;
+    }
+}
 
 
 /* Achievement section */
@@ -616,7 +668,7 @@ h3 {
 }
 
 .blue_bg {
-    background: url(/Icons/achive-bg.png) repeat;
+    background: url("https://s.hcurvecdn.com/selfserve/icons/achive-bg.png") repeat;
     height: 62%;
     width: 100%;
     /* position: relative; */
@@ -789,7 +841,8 @@ h3 {
     font-size: 34px;
     font-family: "Montserrat-ExtraBold";
     color: #2096f3;
-    padding-top: 50px;
+    margin: 40px 0px 0px 0px;
+    text-align: center;
 }
 
 .testimonials {
@@ -964,12 +1017,37 @@ h3 {
         height: 12px;
     }
 
-    /* .carousel-3d-slider {
-        width: 100% !important;
+
+    .left-1 {
+        transform: translateX(-85px) translateZ(-249px) rotateY(0deg) !important;
     }
 
-    .carousel-3d-slide {
-        background-color: transparent;
+    .right-1 {
+        transform: translateX(85px) translateZ(-249px) rotateY(0deg) !important;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .face_img {
+        height: 25px;
+    }
+
+    .test_name {
+        margin: 3px 0px;
+        font-size: 15px;
+        font-family: "Montserrat-semibold";
+    }
+
+    .test_img {
+        height: 12px;
+    }
+
+    .para_on_para {
+        font-size: 10px;
+    }
+
+    .carousel-3d-slider {
+        width: 100% !important;
     }
 
     .carousel-3d-slide.current {
@@ -978,7 +1056,7 @@ h3 {
 
     .testimonials {
         scale: 0.75;
-    } */
+    }
 
     .left-1 {
         transform: translateX(-85px) translateZ(-249px) rotateY(0deg) !important;
@@ -1003,6 +1081,11 @@ h3 {
     text-transform: uppercase;
     padding: 20px;
     text-align: center;
+}
+
+.options div a:hover {
+    color: #0b60b4;
+    transition: 0.3s;
 }
 
 .options div a {
@@ -1038,7 +1121,7 @@ h3 {
     z-index: 1;
     width: 70px;
     height: 70px;
-    padding: 5px;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1069,7 +1152,7 @@ h3 {
     width: 100%;
     height: 3px;
     background: inherit;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .menu-wrap .hamburger>div::after {
@@ -1174,6 +1257,12 @@ h3 {
     margin-top: 650px;
 }
 
+#selfserve .self-container .selfwrap {
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+}
+
 #selfserve .abs_self {
     position: absolute;
     left: 0px;
@@ -1187,17 +1276,11 @@ h3 {
 }
 
 #selfserve .self-container {
-    background: url("/Icons/selfserve-bg.png") no-repeat center center/cover;
+    background: url("https://s.hcurvecdn.com/selfserve/icons/selfserve-bg.png") no-repeat center center/cover;
     /* z-index: 1; */
     width: 100%;
     position: relative;
     /* margin-top: -650px; */
-}
-
-#selfserve .self-container .selfwrap {
-    overflow: hidden;
-    position: relative;
-    top: 50px;
 }
 
 #selfserve .self-title {
@@ -1242,6 +1325,7 @@ h3 {
 }
 
 #selfserve .cta .cta-btn {
+    cursor: pointer;
     background: #fff;
     padding: 20px 45px;
     border-radius: 15px;
@@ -1259,7 +1343,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-top: -50px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 #selfserve .icons .icon {
@@ -1279,21 +1363,22 @@ h3 {
 #selfserve .icons .icon img {
     max-width: 350px;
     height: auto;
-    padding: 20px;
+    padding: 50px;
 }
 
 
 #footer {
-    background: url('/Icons/footerbg.png') no-repeat center center/cover;
+    background: url('https://s.hcurvecdn.com/selfserve/icons/footerbg.png') no-repeat center center/cover;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 #footer .nav-menu {
     justify-content: center;
     align-items: center;
     font-family: "Montserrat-Bold";
-    font-size: 22px;
+    font-size: 17px;
     padding: 50px 0;
 }
 
@@ -1301,6 +1386,7 @@ h3 {
     color: #fff;
     padding: 0 20px;
 }
+
 
 #contact {
     display: flex;
@@ -1314,10 +1400,18 @@ h3 {
 
 #contact .form-title {
     font-family: "Montserrat-ExtraBold";
-    font-size: 27px;
+    font-size: 19px;
     color: #0A6CC3;
     text-align: center;
     padding: 20px 10px;
+}
+
+#err {
+    font-size: 15px;
+    font-family: "Montserrat-Bold";
+    color: #d00505;
+    text-align: center;
+    visibility: hidden;
 }
 
 #contact input {
@@ -1327,27 +1421,33 @@ h3 {
     font-family: "Montserrat-Bold";
     padding: 11px 12px;
     background: #d4d4d4;
-    border: none;
-    font-size: 20px;
+    border: 3px solid transparent;
+    font-size: 16px;
     border-radius: 15px;
+}
+
+#contact input::-webkit-outer-spin-button,
+#contact input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #contact input::placeholder {
     color: #b5b5b5;
 }
 
-#contact a {
+#contact img {
     display: block;
     margin: auto;
 }
 
-#contact a img {
+#contact img {
     scale: 0.71;
 }
 
 #footer .foot-text {
     font-family: "Montserrat-Light";
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -1374,7 +1474,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: marqueescroll 18s linear 0s infinite;
+    animation: marqueescroll 26s linear 0s infinite;
     animation-play-state: running;
     animation-delay: 0s;
     animation-direction: normal;
@@ -1397,6 +1497,7 @@ h3 {
     max-width: 150px;
     background: #fdfdfd;
     border: none;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
 .marquee-box:hover div {
@@ -1415,6 +1516,106 @@ h3 {
     100% {
         transform: translateX(-100%);
     }
+}
+
+/* footer modal */
+
+.modal2 {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal2_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 380px;
+    background-color: #fff;
+
+}
+
+#contatctbtn {
+    cursor: pointer;
+}
+
+.scalemore {
+    animation: scalemore 0.4s ease-in-out;
+}
+
+.closemodal {
+    animation: closemodal 0.4s ease-in-out;
+}
+
+@keyframes scalemore {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes closemodal {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0;
+    }
+}
+
+/* Close Button */
+.close2 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 0px 10px 10px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.msg {
+    height: auto;
+    width: 100%;
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nice {
+    font-family: "Montserrat-Bold";
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+.username {
+    font-family: "Montserrat-ExtraBold";
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.our_team {
+    font-size: 19px;
+    font-family: "Montserrat-Medium";
+    padding: 10px 50px;
+    text-align: center;
 }
 
 
@@ -1498,10 +1699,6 @@ h3 {
         width: 350px;
         height: 500px;
     }
-
-    .para_on_para {
-        font-size: 13px;
-    }
 }
 
 /* @media(max-width:750px) {
@@ -1514,6 +1711,13 @@ h3 {
     }
     
 } */
+
+@media screen and (max-width:1582px) {
+    .options {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 1900px) {
     .btn_copy_content {
         font-size: 60px;
@@ -1659,7 +1863,7 @@ h3 {
 
     #footer .nav-menu {
         padding: 36px 0px;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     #footer .nav-menu a {
@@ -1667,15 +1871,15 @@ h3 {
     }
 
     #contact .form-title {
-        font-size: 24px;
+        font-size: 19px;
     }
 
     #contact input {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     #footer .foot-text {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -1826,23 +2030,23 @@ h3 {
 
     #footer .nav-menu {
         padding: 28px 0px;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #contact .form-title {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     #contact input {
         font-size: 14px;
     }
 
-    #contact a img {
+    #contact img {
         scale: 0.57;
     }
 
     #footer .foot-text {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     #selfserve .steps {
@@ -1944,7 +2148,7 @@ h3 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 5px;
         height: 100px;
     }
 
@@ -2061,6 +2265,19 @@ h3 {
     .face_img {
         height: 30px;
     }
+
+    .nice {
+        font-size: 22px;
+    }
+
+    .username {
+        font-size: 26px;
+    }
+
+    .our_team {
+        font-size: 18px;
+        padding: 10px 4px;
+    }
 }
 
 @media screen and (max-width:423px) {
@@ -2090,7 +2307,6 @@ h3 {
     .number_count {
         font-size: 37px;
     }
-
 }
 
 @media screen and (max-width:400px) {
