@@ -421,6 +421,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* swiper container */
+.swipe_card_container {
+    background: url("https://s.hcurvecdn.com/selfserve/icons/swipeblue.png");
+    position: relative;
+}
+
 #usp_head_container {
     display: flex;
     justify-content: center;
@@ -428,7 +433,8 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     height: 435px;
     width: 100%;
-    background: url("https://s.hcurvecdn.com/selfserve/icons/swipeblue.png") repeat;
+    max-width: 1600px;
+    margin: auto;
     /* background-size: cover; */
 }
 
@@ -1132,7 +1138,7 @@ h3 {
 .menu-wrap .hamburger>div {
     position: relative;
     flex: none;
-    width: 100%;
+    width: 300%;
     height: 3px;
     background: #fff;
     display: flex;
