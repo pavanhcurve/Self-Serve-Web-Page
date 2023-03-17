@@ -23,12 +23,13 @@ span.onclick = function() {
   video.pause();
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    video.pause();
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//     video.pause();
+//   }
+// }
+
 
 //swiper first
 var swiper = new Swiper(".swiper-container", {
@@ -64,7 +65,7 @@ var swiper = new Swiper(".swiper-container", {
       // width: 1000,
     },
     2000: {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 20
     }
   },
@@ -125,20 +126,54 @@ $(window).scroll(function () {
 });
 
 // footer modal
-var footermodal = document.getElementById("footer_modal");
-var anscale = document.getElementById("ct2");
-var onget = document.getElementById("contatctbtn");
-var closee = document.getElementsByClassName("close2")[0];
-var usname = document.getElementById("usname");
-var showname = document.getElementById("namedisplay");
+const footermodal = document.getElementById("footer_modal");
+const anscale = document.getElementById("ct2");
+const onget = document.getElementById("contatctbtn");
+const closee = document.getElementsByClassName("close2")[0];
+const usname = document.getElementById("usname");
+const showname = document.getElementById("namedisplay");
+const usemail = document.getElementById("usemail");
+const agname = document.getElementById("agname");
+const usnum = document.getElementById("usnum");
+const err = document.getElementById("err");
 
-onget.onclick = function() {
-  footermodal.style.display = "block";
-  anscale.classList.add("scalemore"); 
-  showname.innerHTML = usname.value;
+const valid = () => {
+    if (usname.value == "" || usemail.value == "" || usnum.value == "" || agname.value == "") {
+        usname.style.border = "3px solid red";
+        usemail.style.border = "3px solid red";
+        agname.style.border = "3px solid red";
+        usnum.style.border = "3px solid red";
+        footermodal.style.display = "none";
+        err.style.visibility = "visible";
+        setTimeout(function () {
+            usname.style.border = "3px solid transparent";
+            usemail.style.border = "3px solid transparent";
+            agname.style.border = "3px solid transparent";
+            usnum.style.border = "3px solid transparent";
+            err.style.visibility = "hidden";
+        }, 2000);
+    } else {
+        footermodal.style.display = "block";
+        anscale.classList.add("scalemore");
+        showname.innerHTML = usname.value;
+        setTimeout(function () {
+            footermodal.style.display = "none";
+        }, 5000);
+    }
 }
-closee.onclick = function() {
-  footermodal.style.display = "none";
+
+
+closee.onclick = function () {
+    footermodal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == footermodal) {
+        footermodal.style.display = "none";
+    }else if(event.target == modal) {
+      modal.style.display = "none";
+      video.pause();
+  }
 }
 
 // testimony
