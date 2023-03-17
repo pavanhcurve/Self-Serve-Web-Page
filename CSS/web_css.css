@@ -167,7 +167,7 @@ body::-webkit-scrollbar-thumb
 }
 .btn_copy_content{
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 46px;
     font-family: "Montserrat-Bold";
     width: 70%;
     padding: 10px 20px;
@@ -247,7 +247,7 @@ body::-webkit-scrollbar-thumb
 
 .visit_btn{
     margin: 15px 0px;
-    width: 210px;
+    width: 240px;
     cursor: pointer;
 }
 .visit_btn img{
@@ -445,6 +445,7 @@ body::-webkit-scrollbar-thumb
   
   .call_me_gif {
     height: 200px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
   }
   
   .img-box {
@@ -1287,6 +1288,7 @@ h3 {
     background: url('https://s.hcurvecdn.com/selfserve/icons/footerbg.png') no-repeat center center/cover;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 #footer .nav-menu {
@@ -1374,7 +1376,7 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: marqueescroll 18s linear 0s infinite;
+    animation: marqueescroll 26s linear 0s infinite;
     animation-play-state: running;
     animation-delay: 0s;
     animation-direction: normal;
@@ -1397,6 +1399,7 @@ h3 {
     max-width: 150px;
     background: #fdfdfd;
     border: none;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
   }
 
   .marquee-box:hover div {
@@ -1415,6 +1418,84 @@ h3 {
     100% {
       transform: translateX(-100%);
     }
+  }
+
+  /* footer modal */
+
+.modal2 {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Modal Content */
+  .modal2_content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 380px;
+    background-color: #fff;
+    
+  }
+  #contatctbtn{
+    cursor: pointer;
+  }
+  .scalemore{
+    animation: scalemore 0.4s ease-in-out;
+  }
+  @keyframes scalemore {
+    0%{
+        scale: 0;
+    }100%{
+        scale: 1;
+    }
+  }
+  
+  /* Close Button */
+  .close2 {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 0px 10px 10px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 12;
+  }
+  .msg{
+    height: auto;
+    width: 100%;
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nice{
+    font-family: "Montserrat-Bold";
+    font-size: 24px;
+    padding: 10px 0px;
+  }
+  .username{
+    font-family: "Montserrat-ExtraBold";
+    font-size: 30px;
+    padding: 10px 0px;
+  }
+  .our_team{
+    font-size: 19px;
+    font-family: "Montserrat-Medium";
+    padding: 10px 50px;
+    text-align: center;
   }
 
 
@@ -1962,6 +2043,16 @@ h3 {
     .face_img {
         height: 30px;
     }
+    .nice{
+        font-size: 22px;
+    }
+    .username{
+        font-size: 26px;
+    }
+    .our_team{
+        font-size: 18px;
+        padding: 10px 4px;
+    }
 }
 @media screen and (max-width:423px) {
     .inner-box{
@@ -1985,7 +2076,6 @@ h3 {
     .number_count{
         font-size: 37px;
     }
-   
 }
 @media screen and (max-width:400px){
     #footer .nav-menu a {

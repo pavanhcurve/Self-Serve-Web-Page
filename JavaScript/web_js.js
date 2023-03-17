@@ -124,6 +124,22 @@ $(window).scroll(function () {
 
 });
 
+// footer modal
+var footermodal = document.getElementById("footer_modal");
+var anscale = document.getElementById("ct2");
+var onget = document.getElementById("contatctbtn");
+var closee = document.getElementsByClassName("close2")[0];
+var usname = document.getElementById("usname");
+var showname = document.getElementById("namedisplay");
+
+onget.onclick = function() {
+  footermodal.style.display = "block";
+  anscale.classList.add("scalemore"); 
+  showname.innerHTML = usname.value;
+}
+closee.onclick = function() {
+  footermodal.style.display = "none";
+}
 
 // testimony
 // var swiper = new Swiper(".test_mony_Swiper", {
