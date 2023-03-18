@@ -313,7 +313,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .lets_btn img {
-    height: 49px;
     width: 230px;
     cursor: pointer;
 }
@@ -416,13 +415,12 @@ body::-webkit-scrollbar-thumb {
 
 .sales_btn img {
     width: 200px;
-    height: 46px;
     cursor: pointer;
 }
 
 /* swiper container */
-.swipe_card_container {
-    background: url("https://s.hcurvecdn.com/selfserve/icons/swipeblue.png");
+#entswiper {
+    background: url("https://s.hcurvecdn.com/selfserve/icons/swipeblue.png") no-repeat center center/cover;
     position: relative;
 }
 
@@ -435,7 +433,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     max-width: 1600px;
     margin: auto;
-    /* background-size: cover; */
 }
 
 #usp_head img {
@@ -446,6 +443,7 @@ body::-webkit-scrollbar-thumb {
 .swiper-container {
     width: 100%;
     height: 100%;
+    margin-right: 50px !important;
 }
 
 .swiper-slide {
@@ -484,6 +482,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Montserrat-Bold";
     font-size: 44px;
     color: #f6f6f6;
+    margin: 0px 10px 0px 43px;
 }
 
 .head_in {
@@ -521,7 +520,7 @@ body::-webkit-scrollbar-thumb {
     cursor: grab;
     /* max-width: 90%; */
     margin: 15px auto;
-    max-width: 285px;
+    max-width: 250px;
 
     /* position: relative; */
     top: 50px;
@@ -696,7 +695,7 @@ h3 {
 
 .box-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     height: 100%;
@@ -768,7 +767,7 @@ h3 {
 }
 
 .clients_head {
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Montserrat-Extrabold";
     text-align: center;
     margin-bottom: 22px;
@@ -792,7 +791,7 @@ h3 {
 }
 
 .carousel-3d-container {
-    height: 300px !important;
+    /* height: 300px !important; */
     justify-items: center;
 }
 
@@ -1038,6 +1037,10 @@ h3 {
         height: 25px;
     }
 
+    .head_testm {
+        font-size: 22px;
+    }
+
     .test_name {
         margin: 3px 0px;
         font-size: 15px;
@@ -1052,17 +1055,17 @@ h3 {
         font-size: 10px;
     }
 
-    .carousel-3d-slider {
-        width: 100% !important;
-    }
+    /* .carousel-3d-slider {
+      width: 100% !important;
+    } */
 
     .carousel-3d-slide.current {
         transform: translateX(0px) translateZ(40px) translateY(25px) rotateY(0deg) !important;
     }
 
-    .testimonials {
-        scale: 0.75;
-    }
+    /* .testimonials {
+      scale: 0.75;
+    } */
 
     .left-1 {
         transform: translateX(-85px) translateZ(-249px) rotateY(0deg) !important;
@@ -1138,7 +1141,7 @@ h3 {
 .menu-wrap .hamburger>div {
     position: relative;
     flex: none;
-    width: 300%;
+    width: 150%;
     height: 3px;
     background: #fff;
     display: flex;
@@ -1412,14 +1415,6 @@ h3 {
     padding: 20px 10px;
 }
 
-#err {
-    font-size: 15px;
-    font-family: "Montserrat-Bold";
-    color: #d00505;
-    text-align: center;
-    visibility: hidden;
-}
-
 #contact input {
     display: block;
     margin: 8px auto;
@@ -1430,12 +1425,6 @@ h3 {
     border: 3px solid transparent;
     font-size: 16px;
     border-radius: 15px;
-}
-
-#contact input::-webkit-outer-spin-button,
-#contact input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
 }
 
 #contact input::placeholder {
@@ -1499,7 +1488,6 @@ h3 {
 .marquee img {
     margin: 0 auto;
     height: auto;
-    max-height: 150px;
     max-width: 150px;
     background: #fdfdfd;
     border: none;
@@ -1552,6 +1540,12 @@ h3 {
 
 }
 
+#contact input::-webkit-outer-spin-button,
+#contact input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 #contatctbtn {
     cursor: pointer;
 }
@@ -1560,8 +1554,12 @@ h3 {
     animation: scalemore 0.4s ease-in-out;
 }
 
-.closemodal {
-    animation: closemodal 0.4s ease-in-out;
+#err {
+    font-size: 15px;
+    font-family: "Montserrat-Bold";
+    color: #d00505;
+    text-align: center;
+    visibility: hidden;
 }
 
 @keyframes scalemore {
@@ -1571,16 +1569,6 @@ h3 {
 
     100% {
         scale: 1;
-    }
-}
-
-@keyframes closemodal {
-    0% {
-        scale: 1;
-    }
-
-    100% {
-        scale: 0;
     }
 }
 
@@ -1726,11 +1714,78 @@ h3 {
 
 @media screen and (min-width: 1900px) {
     .btn_copy_content {
-        font-size: 60px;
+        font-size: 70px;
     }
 
     .visit_btn {
+        width: 500px;
+    }
+
+    .options {
+        font-size: 22px;
+    }
+
+    .about_hrading {
+        font-size: 50px;
+    }
+
+    .para {
+        font-size: 30px;
+    }
+
+    .lets_btn img {
+        width: 350px;
+    }
+
+    .f_head {
+        font-size: 50px;
+    }
+
+    .para1,
+    .para2 {
+        font-size: 25px;
+    }
+
+    .create_btn img {
         width: 300px;
+        height: auto;
+    }
+
+    .why_dco_gif img {
+        width: 130%;
+    }
+
+    .s_head {
+        font-size: 60px;
+    }
+
+    .type {
+        font-size: 30px;
+    }
+
+    .sales_btn img {
+        width: 300px;
+    }
+
+    .clients_head {
+        font-size: 50px;
+    }
+
+    .marquee img {
+        max-width: 200px;
+    }
+
+    #selfserve .self-title h4 {
+        font-size: 65px;
+    }
+
+    #selfserve .steps .step .step-text {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    #selfserve .cta .cta-text {
+        font-size: 50px;
     }
 }
 
@@ -1959,18 +2014,18 @@ h3 {
         width: 115px;
     }
 
+    .menu-wrap .hamburger {
+        top: 22px;
+        right: 10px;
+        width: 51px;
+        height: 50px;
+    }
+
     .menu-wrap .toggler {
         top: 12px;
         right: 4px;
-        width: 65px;
-        height: 65px;
-    }
-
-    .menu-wrap .hamburger {
-        top: 17px;
-        right: 10px;
-        width: 60px;
-        height: 60px;
+        width: 51px;
+        height: 51px;
     }
 
     .para_gif_content {
@@ -2217,16 +2272,15 @@ h3 {
         margin: 20px 0px 10px 0px;
     }
 
-    .Hlogo img {
-        width: 200px;
-        height: 36px;
-    }
-
     .menu-wrap .toggler {
         top: 12px;
         right: 4px;
         width: 54px;
         height: 54px;
+    }
+
+    .menu-wrap .hamburger>div {
+        width: 300%;
     }
 
     .menu-wrap .hamburger {
@@ -2236,6 +2290,14 @@ h3 {
         height: 40px;
     }
 
+    .Hlogo img {
+        width: 200px;
+        height: 36px;
+    }
+
+    /* .menu-wrap .hamburger>div {
+        width: 176%;
+    } */
     .menu-wrap .menu>div {
         margin-top: 63px;
     }

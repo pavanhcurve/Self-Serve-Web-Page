@@ -32,7 +32,8 @@
             <div class="modal-content">
                 <span class="close colorblack user_none">&times;</span>
                 <video id="modal-video" controls>
-                    <source src="https://do.hockeycurve.com/selfserve/icons/explainer.mp4" type="video/mp4">
+                    <source src="https://hc-do.sgp1.cdn.digitaloceanspaces.com/selfserve/icons/explainer3.mp4"
+                        type="video/mp4">
                     <!-- <source src="path/to/video.webm" type="video/webm"> -->
                 </video>
             </div>
@@ -99,15 +100,13 @@
                 </div>
             </div>
         </section>
-        <section class="swipe_card_container">
+        <section id="entswiper" class="swipe_card_container">
             <div id="usp_head_container">
+                <div class="first_box">
+                    <p>Enterprise <br> Marketing <br> Automation</p>
+                </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="first_box">
-                                <p>Enterprise <br> Marketing <br> Automation</p>
-                            </div>
-                        </div>
                         <div class="swiper-slide">
                             <div class="img-box">
                                 <div class="partol">
@@ -196,7 +195,9 @@
                                     <div class="paramount">
                                         <p class="para_in">On Demand Access to Strategic Domain Experts for Programmatic
                                             Setup.</p>
+
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -832,10 +833,10 @@
             <form action="#" id="contact">
                 <h3 class="form-title">REACH US</h3>
                 <p id="err">Please Fill in all the Inputs</p>
-                <input type="text" name="name" placeholder="Name" id="usname" required>
-                <input type="text" name="agency-name" placeholder="Agency Name" id="agname" required>
-                <input type="email" name="email" placeholder="Email ID" id="usemail" required>
-                <input type="number" name="number" placeholder="Phone Number" id="usnum" required>
+                <input type="text" name="name" placeholder="Name" id="usname">
+                <input type="text" name="agency-name" placeholder="Agency Name" id="agname">
+                <input type="email" name="email" placeholder="Email ID" id="usemail">
+                <input type="number" name="number" placeholder="Phone Number" id="usnum">
                 <img src="https://s.hcurvecdn.com/selfserve/icons/footercta.png" alt="Contact btn" id="contatctbtn"
                     onclick="valid()">
             </form>
