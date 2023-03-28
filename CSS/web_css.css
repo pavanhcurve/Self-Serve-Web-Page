@@ -780,7 +780,7 @@ h3 {
 
 /* testimoney */
 .face_img {
-    height: 55px;
+    height: 40px;
 }
 
 .para_on_para {
@@ -788,7 +788,7 @@ h3 {
 }
 
 .carousel-3d-container {
-    /* height: 300px !important; */
+    height: 300px !important;
     justify-items: center;
 }
 
@@ -855,7 +855,7 @@ h3 {
           width: 550px; */
     background: #fff;
     border: 2px solid #5e5eff;
-    padding: 8px 18px;
+    padding: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
     border-radius: 6px;
 }
@@ -867,7 +867,7 @@ h3 {
 
 .test_name {
     margin: 3px 0px;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Montserrat-semibold";
 }
 
@@ -1049,7 +1049,7 @@ h3 {
     }
 
     .para_on_para {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     /* .carousel-3d-slider {
@@ -1556,7 +1556,6 @@ h3 {
     font-family: "Montserrat-Bold";
     color: #d00505;
     text-align: center;
-    visibility: hidden;
 }
 
 @keyframes scalemore {

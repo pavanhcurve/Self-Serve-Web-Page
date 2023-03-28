@@ -137,56 +137,81 @@ const agname = document.getElementById("agname");
 const usnum = document.getElementById("usnum");
 const err = document.getElementById("err");
 
+
 const valid = () => {
   if (usname.value == "") {
     usname.style.border = "3px solid red";
     footermodal.style.display = "none";
-    err.style.visibility = "visible";
+    err.innerText = "Please input all input fields";
     setTimeout(function () {
       usname.style.border = "3px solid transparent";
       usemail.style.border = "3px solid transparent";
       agname.style.border = "3px solid transparent";
       usnum.style.border = "3px solid transparent";
-      err.style.visibility = "hidden";
+      err.innerHTML = "";
     }, 2000);
   }
   if (usemail.value == "") {
     usemail.style.border = "3px solid red";
     footermodal.style.display = "none";
-    err.style.visibility = "visible";
+    err.innerText = "Please input all input fields";
     setTimeout(function () {
       usname.style.border = "3px solid transparent";
       usemail.style.border = "3px solid transparent";
       agname.style.border = "3px solid transparent";
       usnum.style.border = "3px solid transparent";
-      err.style.visibility = "hidden";
+      err.innerHTML = "";
     }, 2000);
   }
   if (agname.value == "") {
     agname.style.border = "3px solid red";
     footermodal.style.display = "none";
-    err.style.visibility = "visible";
+    err.innerText = "Please input all input fields";
     setTimeout(function () {
       usname.style.border = "3px solid transparent";
       usemail.style.border = "3px solid transparent";
       agname.style.border = "3px solid transparent";
       usnum.style.border = "3px solid transparent";
-      err.style.visibility = "hidden";
+      err.innerHTML = "";
     }, 2000);
   }
   if (usnum.value == "") {
     usnum.style.border = "3px solid red";
     footermodal.style.display = "none";
-    err.style.visibility = "visible";
+    err.innerText = "Please input all input fields";
     setTimeout(function () {
       usname.style.border = "3px solid transparent";
       usemail.style.border = "3px solid transparent";
       agname.style.border = "3px solid transparent";
       usnum.style.border = "3px solid transparent";
-      err.style.visibility = "hidden";
+      err.innerHTML = "";
     }, 2000);
   }
-  if (usname.value !== "" && agname.value !== "" && usemail.value !== "" && usnum.value !== "") {
+  if (usnum.value.length !== 10 && usnum.value.length !== 0) {
+    usnum.style.border = "3px solid red";
+    footermodal.style.display = "none";
+    err.innerText = "Please enter a valid number";
+    setTimeout(function () {
+      usname.style.border = "3px solid transparent";
+      usemail.style.border = "3px solid transparent";
+      agname.style.border = "3px solid transparent";
+      usnum.style.border = "3px solid transparent";
+      err.innerHTML = "";
+    }, 2000);
+  }
+  if (usnum.value === "0000000000" || usnum.value === "1111111111" || usnum.value === "2222222222" || usnum.value === "3333333333" || usnum.value === "4444444444" || usnum.value === "5555555555" || usnum.value === "6666666666" || usnum.value === "7777777777" || usnum.value === "8888888888" || usnum.value === "9999999999") {
+    usnum.style.border = "3px solid red";
+    footermodal.style.display = "none";
+    err.innerText = "Please enter a valid number";
+    setTimeout(function () {
+      usname.style.border = "3px solid transparent";
+      usemail.style.border = "3px solid transparent";
+      agname.style.border = "3px solid transparent";
+      usnum.style.border = "3px solid transparent";
+      err.innerHTML = "";
+    }, 2000);
+  }
+  if (usname.value !== "" && agname.value !== "" && usemail.value !== "" && usnum.value !== "" && usnum.value.length === 10 && usnum.value !== "0000000000" && usnum.value !== "1111111111" && usnum.value !== "2222222222" && usnum.value !== "3333333333" && usnum.value !== "4444444444" && usnum.value !== "5555555555" && usnum.value !== "6666666666" && usnum.value !== "7777777777" && usnum.value !== "8888888888" && usnum.value !== "9999999999") {
     footermodal.style.display = "block";
     anscale.classList.add("scalemore");
     showname.innerHTML = usname.value;
@@ -196,8 +221,8 @@ const valid = () => {
   } else {
     footermodal.style.display = "none";
   }
+  console.log(usnum.value.length);
 }
-
 
 closee.onclick = function () {
   footermodal.style.display = "none";
@@ -264,8 +289,8 @@ new Vue({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     }
 
@@ -466,8 +491,6 @@ gsap.from(".icon1,.icon3", {
   ease: "bounce"
 });
 
-
-
 //show year
 var year = new Date();
 var current = year.getFullYear();
@@ -486,7 +509,3 @@ function chngImage(imgchange) {
 var imgchange = window.matchMedia("(max-width: 750px)");
 chngImage(imgchange);
 imgchange.addEventListener(chngImage);
-
-
-
-
